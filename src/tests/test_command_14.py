@@ -41,4 +41,4 @@ def test_command_14(tmpdir):
     for row in CATCH:
         assert row in found
 
-    assert 0
+    #assert 0
