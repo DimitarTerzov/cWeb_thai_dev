@@ -7,16 +7,22 @@ import re
 #Segment length validator
 def command14(filepath):
 
-    regex = re.compile(ur'<Sync\s*time\s*=\s*"\s*([0-9\.]+)\s*"\s*/>')
+    regex = re.compile(ur'<Sync\s*time\s*=\s*"\s*([0-9\.]+)\s*"\s*/>', re.UNICODE)
+    section_end_time =re.compile(ur'<Section.*?endTime="([\d.]+)', re.UNICODE)
 
     found = {}
     cur_time = 0
 
     with io.open(filepath, 'r', encoding='utf') as f:
-        ln = 1
+        ln = 0
         for line in f:
             line = line.rstrip("\r\n")
+
+            if re.search(section_end_time, line) is not None:
+                end_time = float(re.search(section_end_time, line).group(1))
+
             for m in re.findall(regex, line):
+                last_sync_line = ln
 
                 seg_time = float(m)
                 seg_len = seg_time - cur_time
@@ -26,6 +32,13 @@ def command14(filepath):
 
                 #update current time
                 cur_time = seg_time
+
+            if u'</Section>' in line:
+                seg_len = end_time - cur_time
+
+                if seg_len > 15.0:
+                    found[last_sync_line] = [14, 'Segment exceeds limit', 'Sync time="{}"; length: {} seconds'.format(cur_time, seg_len)]
+
 
             ln += 1
 
