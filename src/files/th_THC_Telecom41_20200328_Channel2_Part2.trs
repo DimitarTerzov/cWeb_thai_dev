@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="Admin" audio_filename="th_THC_Telecom41_20200328_Channel2_Part2" version="2" version_date="200429">
+<Speakers>
+<Speaker id="spk1" name="The man 1" check="no" type="male" dialect="native" accent="" scope="global"/>
+</Speakers>
+<Episode>
+<Section type="report" startTime="0" endTime="189.088">
+<Turn startTime="0" endTime="0.744" speaker="spk1">
+<Sync time="0"/>
+อะไรนะครับ
+</Turn>
+<Turn startTime="0.744" endTime="6.419" speaker="spk1">
+<Sync time="0.744"/>
+[no-speech] [noise]
+</Turn>
+<Turn speaker="spk1" startTime="6.419" endTime="16.031">
+<Sync time="6.419"/>
+สอบถามเพิ่มเติมอีกนิดนึงครับ รบกวน &lt;lang:English&gt; ((check package)) &lt;/lang:English&gt; มือถือให้นิดนึงได้ไหมครับว่าตอนนี้หน่ะครับเป็น &lt;lang:English&gt; ((pro)) &lt;/lang:English&gt; แบบไหนจ่ายรายเดือนเท่าไหร่ครับพอดีไม่ได้เก็บข้อมูลไว้เลย
+</Turn>
+<Turn startTime="16.031" endTime="26.474">
+<Sync time="16.031"/>
+[no-speech]
+</Turn>
+<Turn speaker="spk1" startTime="26.474" endTime="27.459">
+<Sync time="26.474"/>
+ใช่ครับ
+</Turn>
+<Turn startTime="27.459" endTime="42.048">
+<Sync time="27.459"/>
+[no-speech]
+</Turn>
+<Turn speaker="spk1" startTime="42.048" endTime="54.443">
+<Sync time="42.048"/>
+พอดีมีพอมี &lt;lang:English&gt; ((pro)) &lt;/lang:English&gt; อันไหนที่ถูกลงกว่านี้ไหมอะครับเน้นรับสายอย่างเดียวหรือเฉพาะ &lt;lang:English&gt; ((net)) &lt;/lang:English&gt; ก็ได้พอดียังต้องใช้เบอร์นี้อยู่ครับแต่ไม่ได้โทรออก 
+</Turn>
+<Turn startTime="54.443" endTime="64.263">
+<Sync time="54.443"/>
+[noise] [no-speech]
+</Turn>
+<Turn speaker="spk1" startTime="64.263" endTime="76.997">
+<Sync time="64.263"/>
+ได้ครับดีเลยเปลี่ยนได้เลยไหมครับ [noise] แล้วจะได้รับการยืนยันการเปลี่ยน &lt;lang:English&gt; ((package)) &lt;/lang:English&gt; ทางไหนอะครับ
+</Turn>
+<Turn startTime="76.997" endTime="87.182">
+<Sync time="76.997"/>
+[no-speech]
+</Turn>
+<Turn speaker="spk1" startTime="87.182" endTime="92.32">
+<Sync time="87.182"/>
+((ทาง)) &lt;lang:English&gt; ((email)) &lt;/lang:English&gt; อย่างเดียวก็ได้ครับไม่แน่ใจว่า &lt;lang:English&gt; ((email)) &lt;/lang:English&gt; มีอยู่ในระบบไหมครับ
+</Turn>
+<Turn startTime="92.32" endTime="98.681">
+<Sync time="92.32"/>
+[no-speech]
+</Turn>
+<Turn speaker="spk1" startTime="98.681" endTime="111.934">
+<Sync time="98.681"/>
+ครับผม &lt;lang:English&gt; ((email)) &lt;/lang:English&gt; นะครับ &lt;lang:English&gt; ((cerberus@hotmail.com)) &lt;/lang:English&gt; ครับ
+</Turn>
+<Turn startTime="111.934" endTime="120.36">
+<Sync time="111.934"/>
+[no-speech]
+</Turn>
+<Turn speaker="spk1" startTime="120.36" endTime="121.296">
+<Sync time="120.36"/>
+&lt;lang:English&gt; ((OK)) &lt;/lang:English&gt; ครับ
+</Turn>
+<Turn startTime="121.296" endTime="128.945">
+<Sync time="121.296"/>
+[no-speech]
+</Turn>
+<Turn speaker="spk1" startTime="128.945" endTime="131.164">
+<Sync time="128.945"/>
+#อืม ไม่มีแล้วนะครับ
+</Turn>
+<Turn startTime="131.164" endTime="141.131">
+<Sync time="131.164"/>
+[no-speech] [noise]
+</Turn>
+<Turn speaker="spk1" startTime="141.131" endTime="146.277">
+<Sync time="141.131"/>
+ได้เลยครับได้เลย [noise]
+</Turn>
+<Turn startTime="146.277" endTime="155.372">
+<Sync time="146.277"/>
+[no-speech]
+</Turn>
+<Turn speaker="spk1" startTime="155.372" endTime="156.643">
+<Sync time="155.372"/>
+ให้สี่ครับ
+</Turn>
+<Turn startTime="156.643" endTime="174.726">
+<Sync time="156.643"/>
+[no-speech]
+<Sync time="165.775"/>
+[no-speech]
+</Turn>
+<Turn speaker="spk1" startTime="174.726" endTime="175.914">
+<Sync time="174.726"/>
+ให้สี่ครับ
+</Turn>
+<Turn startTime="175.914" endTime="184.318">
+<Sync time="175.914"/>
+[no-speech]
+</Turn>
+<Turn speaker="spk1" startTime="184.318" endTime="189.088">
+<Sync time="184.318"/>
+ครับครับสวัสดีครับ
+</Turn>
+</Section>
+</Episode>
+</Trans>

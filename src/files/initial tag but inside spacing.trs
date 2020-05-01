@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="hz" audio_filename="CT_Newsevents_36" version="2" version_date="200221">
+<Speakers>
+<Speaker id="spk1" name="Anchor" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk2" name="speaker#1" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk3" name="Redactor1" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk4" name="speaker#2" check="no" type="male" dialect="nonnative" accent="" scope="local"/>
+<Speaker id="spk5" name="speaker#3" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk6" name="speaker#4" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk7" name="speaker#5" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk8" name="speaker#6" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk9" name="speaker#7" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk10" name="speaker#8" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk11" name="speaker#9" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk12" name="speaker#10" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk13" name="Redactor2" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk14" name="Redactor3" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk15" name="Redactor4" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk16" name="Redactor5" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk17" name="speaker#11" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk18" name="speaker#12" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk19" name="speaker#13" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk20" name="speaker#14" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk21" name="speaker#15" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk22" name="Redactor6" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk23" name="speaker#16" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk24" name="speaker#17" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk25" name="speaker#18" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk26" name="speaker#19" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk27" name="speaker#20" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk28" name="Redactor7" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk29" name="speaker#21" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk30" name="multiple" check="no" dialect="native" accent="" scope="local"/>
+<Speaker id="spk31" name="speaker#22" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk32" name="speaker#23" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk33" name="speaker#24" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk34" name="Anchor2" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk35" name="speaker#25" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk36" name="Redactor8" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk37" name="speaker#26" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk38" name="speaker#27" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk39" name="speaker#28" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk40" name="speaker#29" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk41" name="Redactor9" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk42" name="speaker#30" check="no" dialect="native" accent="" scope="local" type="male"/>
+<Speaker id="spk43" name="speaker#31" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk44" name="speaker#32" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk45" name="speaker#33" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk46" name="Redactor10" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk47" name="speaker#34" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk48" name="speaker#35" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk49" name="Redactor11" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk50" name="speaker#36" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk51" name="speaker#37" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk52" name="speaker#38" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk53" name="speaker#39" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk54" name="speaker#40" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk55" name="speaker#41" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk56" name="speaker#42" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk57" name="Redactor12" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk58" name="speaker#43" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk59" name="speaker#44" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk60" name="speaker#45" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk61" name="speaker#46" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk62" name="speaker#47" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk63" name="speaker#48" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk64" name="speaker#49" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk65" name="redactor13" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk66" name="redactor14" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk67" name="speaker#50" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk68" name="Redactor15" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk69" name="speaker#51" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk70" name="speaker#52" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk71" name="speaker#53" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk72" name="speaker#54" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk73" name="Redactor16" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk74" name="speaker#55" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk75" name="speaker#56" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk76" name="speaker#57" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk77" name="speaker#58" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk78" name="french" check="no" dialect="nonnative" accent="" scope="local"/>
+<Speaker id="spk79" name="french2" check="no" dialect="native" accent="" scope="local"/>
+<Speaker id="spk80" name="french3" check="no" dialect="native" accent="" scope="local"/>
+<Speaker id="spk81" name="french4" check="no" dialect="native" accent="" scope="local"/>
+<Speaker id="spk82" name="english" check="no" dialect="native" accent="" scope="local"/>
+</Speakers>
+<Episode>
+<Section type="report" startTime="0" endTime="2631.216">
+<Turn startTime="0" endTime="22.324" speaker="spk1">
+<Sync time="0"/>
+[music] [sta] Zůstat ve vládě, nebo odejít. Krajské organizace &lt;initial&gt;ČSSD&lt;/initial&gt; se před klíčovým jednáním neshodují. [music] Oslavy i smutek. Francie si připomíná výročí dobytí Bastily a tři roky od masakru v Nice.
+<Sync time="14.631"/>
+[music] [sta] Nejtragičtější nehoda na přejezdu za patnáct let, na Královéhradecku zemřeli čtyři lidé. 
+</Turn>
+<Turn startTime="22.324" endTime="32.030">
+<Sync time="22.324"/>
+[music]
+</Turn>
+<Turn startTime="32.030" endTime="61.866" speaker="spk1">
+<Sync time="32.030"/>
+[music] [sta] Dobrý večer. Neděle a její Události. Právě začínáme. Sociální demokraté na křižovatce. Už zítra mají rozhodnout o tom, jestli setrvá v menšinové vládě Andreje Babiše. 
+<Sync time="42.167"/>
+Jan Hamáček předsednictvu oficiálně oznámí, že Miloš Zeman odvolá ministra kultury Antonína Staňka na konci července. Strana pak musí rozhodnout, jestli bude trvat na Michalu Šmardovi jako novém ministrovi.
+<Sync time="53.84"/>
+Prezident o jeho kvalifikaci pochybuje. Ani v jedné ze zmíněných otázek nejsou krajské organizace strany podle zjištění <initial> ČT </initial> jednotné.
+</Turn>
+<Turn speaker="spk2" startTime="61.866" endTime="82.275">
+<Sync time="61.866"/>
+[sta] Pokud by sociální demokracie kvůli nenaplnění svého personálního požadavku opustila vládu, tak v podstatě dá volné pole prezudentu prezidentu České republiky.
+<Sync time="73.912"/>
+Dá mu vlastně celou zemi všanc, a to je něco co pro mě je možná trošičku víc, než jestli lpět na jednom, podle mě, velmi kvalitním kandidátovi.
+</Turn>
+<Turn speaker="spk1" startTime="82.275" endTime="94.507">
+<Sync time="82.275"/>
+Z jiných krajů ale zaznívá opak. Na Vysočině sílí hlasy pro odchod z kabinetu, podobně jako v Jihomoravském kraji. Další podle informací &lt;initial&gt; ČT. &lt;/initial&gt;, &lt;initial&gt; ČT &lt;/initial&gt; podmiňují setrvání v koalici jmenováním Michala Šmardy ministrem.
+</Turn>
+<Turn speaker="spk3" startTime="94.507" endTime="108.421">
+<Sync time="94.507"/>
+Sociální demokraty čeká místo cesty na zítřejší jednání vlády cesta do Lidového domu. Tam&lt;initial&gt; ČT &lt;/initial&gt;, padne rozhodnutí, zda budou pokračovat, nebo menšinovou vládu opustí. 
+<Sync time="104.115"/>
+Ze zasedání kabinetu je po dohodě s Janem Hamáčkem premiér omluvil.
+</Turn>
+<Turn speaker="spk4" startTime="108.421" endTime="118.286">
+<Sync time="108.421"/>
+To předsednictvo je v v &lt;initial&gt; Č. T. &lt;/initial&gt;, pondělí odpoledne, tak ono to trošku koliduje s vládou, ale my jsme se domluvili, že že se budeme navzájem informovať.
+</Turn>
+<Turn speaker="spk3" startTime="118.286" endTime="129.628">
+<Sync time="118.286"/>
+Atmosféra před &lt;initial&gt; Č T &lt;/initial&gt;, jednáním šedesátičlenného předsednictva ukazuje, že je strana rozdělena na dva tábory. Co většina oslovených zástupců krajů vítá, je skutečnost, že prezident odvolá Antonína Staňka.
+</Turn>
+<Turn speaker="spk5" startTime="129.628" endTime="132.574">
+<Sync time="129.628"/>
+Vítám a věřím, že ta fraška už konečně skončí. 
+</Turn>
+<Turn speaker="spk6" startTime="132.574" endTime="137.948">
+<Sync time="132.574"/>
+Ten časový prostor že byl dostatečný, že zbytečně se to protahovalo a zbytečně rostla nervozita.
+</Turn>
+<Turn speaker="spk3" startTime="137.948" endTime="148.437">
+<Sync time="137.948"/>
+[sta] Pro stranu by totiž bylo nepřijatelné, aby ministři za sociální demokracii podali demisi a Antonín Staněk případně v úřadu zůstal. Zítra chce na předsednictvu Antonín Staněk vystoupit.
+</Turn>
+<Turn speaker="spk7" startTime="148.437" endTime="156.615">
+<Sync time="148.437"/>
+[sta] Budu na předsednictvu informovat o jednání s panem prezidentem a jak jsem řekl, dám svou funkci k dispozici.
+</Turn>
+<Turn speaker="spk3" startTime="156.615" endTime="179.749">
+<Sync time="156.615"/>
+Hlavní otázkou zítřejšího dne bude, zda má &lt;initial&gt; SSD &lt;/initial&gt; navrhnout jméno jiného kandidáta na ministra. Michal Šmarda podle prezidenta nevyhovuje. 
+<Sync time="164.398"/>
+Zatímco odvolání Staňka většinově zástupci &lt;initial&gt; U S A &lt;/initial&gt; vítají, v otázce navržení případně jiného jména už tak jednota nepanuje.
+<Sync time="172.775"/>
+Část regionů připouští, že debata o jiném jménu je možná, třeba Středočeský kraj, naopak Praha je proti. 
+</Turn>
+<Turn speaker="spk8" startTime="179.749" endTime="189.722">
+<Sync time="179.749"/>
+Michal Šmarda je místopředseda sociální demokracie, dostal obrovskou důveru na sjezdu, nejvíc hlasů, je to naprosto kompetentní politik, manažer, starosta.
+</Turn>
+<Turn speaker="spk3" startTime="189.722" endTime="204.248">
+<Sync time="189.722"/>
+Na zítřejším jednání zazní od několika krajů i to, že by strana už neměla v koalici pokračovat. Pro podání demise by v případě takového hlasování byli zástupci Plzeňského, Ústeckého kraje a Vysočiny. Odchod podporuje i místopředseda Senátu.
+</Turn>
+<Turn speaker="spk9" startTime="204.248" endTime="221.644">
+<Sync time="204.248"/>
+Já jsem pro ukončení toho projektu vládní účasti z důvodů, který jsou naprosto zřejmý.
+<Sync time="211.595"/>
+Neustále nějaké problémy, myslím si, že pan prezident to tím, že udělal ten půlkrok, dává najevo, že chce pokračovat v nějaké licitaci.
+</Turn>
+<Turn speaker="spk3" startTime="221.644" endTime="229.751">
+<Sync time="221.644"/>
+Další kraje zatím váhají. Naopak proti podávání demise ministrů za &lt;initial&gt;ČSSD&lt;initial&gt; se staví kraje Středočeský, Karlovarský a Královehradecký.
+</Turn>
+<Turn speaker="spk10" startTime="229.751" endTime="244.527">
+<Sync time="229.751"/>
+Tak jak já jsem to konzultoval se svými kolegy, a to jak s kolegy, kteří jsou členy předsednictva sociální demokracie, tak ale i běžnými řadovými členy sociální demokracie, tak u nás v tuto chvíli jednoznačně převádá názor zůstat v této stávající vládní koalici.
+</Turn>
+<Turn speaker="spk11" startTime="244.527" endTime="253.408">
+<Sync time="244.527"/>
+V případě, že se situaci nepodaří vyřešit standardně, tak bohužel by asi nic jiného nezbývalo a naši ministři by museli podat demisi.
+</Turn>
+<Turn speaker="spk12" startTime="253.408" endTime="267.553">
+<Sync time="253.408"/>
+Samozřejmě vadí to, že se to celé natahuje, ale já nemám je ve chvíli, kdy pan premiér odmítl jakékoliv jiné kroky, ať je to kompetenční žaloba, či ústavní žalba, tak je to v rukou prezidenta republiky a teď je to i v rukou vedení sociální demokracie.
+</Turn>
+<Turn speaker="spk3" startTime="267.553" endTime="279.083">
+<Sync time="267.553"/>
+Další postup prezident zatím nenaznačil. Čeká na pondělní rozhodnutí předsednictva &lt;nitial&gt;ČSSD&lt;/initial&gt; zda bude strana pokračovat, nebo z vládního projektu odejde. Redakce a vladimír Keblůšek, Česká televize. 
+</Turn>
+<Turn speaker="spk1" startTime="279.083" endTime="349.653">
+<Sync time="279.083"/>
+Teď ohlédnutí za klíčovými kroky ve vládni krizi. Antonín Staněk před dvěma měsíci oznámil svou rezignaci ke konci května. Miloš Zeman demisi nepřijal.
+<Sync time="288.307"/>
+Návrh na odvolání ministra poslal Andrej Babiš prezidentovi jednatřicátého května. Před víc než šesti týdny. Možnost nevyhovět takovému podnětu ústava hlavě státu nedává.
+<Sync time="298.468"/>
+Od závěru června se prezident postupně setkal se všemi aktéry. Nejprve s Michalem Šmardou a Janem Hamáčkem.
+<Sync time="304.949"/>
+Minulý čtvrtek pak znovu s Janem Hamáčkem a taky s Andrejem Babišem. Výsledek ale schůzka nepřinesla. 
+<Sync time="311.473"/>
+A další byly tento týden. Ve čtvrtek opět prezident s premiérem a v pátek zamířili do Lán předseda &lt;initial&gt;ČSSD&lt;/inityal&gt; i nynější ministr kultury. 
+<Sync time="319.287"/>
+Prezident na tomto setkání podle Jana Hamáčka oznámil, že je připraven Antonína Staňka odvolat ke konci červnce. To je zatím poslední díl příběhu. Co bude dál, naznačí už zítřek.
+<Sync time="330.503"/>
+[music] Velkolepou vojenskou přehlídkou si Francouzi připomněli výročí dobytí Bastily. Nejdůležitější státní svátek v zemi doprovodí i řada ohňostrojů.
+<Sync time="340.809"/>
+Ve městě Nice na jihu Francie se ale konat nebude. Přesně před třemi lety tam během oslav při teroristickém útoku zemřelo šestaosmdesát lidí. 
+</Turn>
+<Turn speaker="spk13" startTime="349.653" endTime="379.082">
+<Sync time="349.653"/>
+[sta] Tisíce vojáků,[music][sta] obrněné transportéry,
+<Sync time="357.381"/>
+[sta] nejmodernější stíhačky a nově také létající muž. Demonstrace vojenské síly byla letos výjimečná v mnoha ohledech. 
+<Sync time="367.87"/>
+[sta] Takzvaný Flyboard Air ukázal, jak by mohla vypadat budoucnost francouzských speciálních jednotek. Na budoucnost prezident Macron myslel i den předtím, když oznámil vznik velitelství vesmírných sil.
+</Turn>
+<Turn startTime="379.082" endTime="390.452" speaker="spk78">
+<Sync time="379.082"/>
+&lt;lang:French&gt;&lt;/lang:French&gt;
+</Turn>
+<Turn speaker="spk13" startTime="390.452" endTime="398.918">
+<Sync time="390.452"/>
+[sta] Zatím se ale Francouzi musí bránit i na zemi. Nejen v Paříži, ale i po celé zemi panovala přísná bezpečnostní opatření. V pohotovosti bylo na sto tisíc policistů.
+</Turn>
+<Turn startTime="398.918" endTime="411.588" speaker="spk79">
+<Sync time="398.918"/>
+[sta] &lt;lang:French&gt;&lt;/lang:French&gt;
+</Turn>
+<Turn speaker="spk13" startTime="411.588" endTime="440.476">
+<Sync time="411.588"/>
+[sta] Tragickou tři roky starou zkušenost s útokem v nákladním autě mají v Nice. V ulicích tu pro jistotu vyrostla řada ochranných bariér. Poprvé od útoku radnice povolila ohňostroj. Ten se konal ale den předem na přání rodin obětí teroristického útoku. 
+<Sync time="425.727"/>
+[sta] Pro ně už čtrnáctý července není důvod k oslavám. Sem na Anglickou promenádu přišly sledovat ohňostroj tisíce lidí. Konal se pod názvem Renesance, návrat do života.
+<Sync time="435.95"/>
+[sta] Město Nice se snaží udělat krok vpřed, vrátit život k normálu.
+</Turn>
+<Turn startTime="440.476" endTime="452.618" speaker="spk80">
+<Sync time="440.476"/>
+&lt;lang:French&gt;&lt;/lang:French&gt;
+</Turn>
+<Turn speaker="spk81" startTime="452.618" endTime="464.761">
+<Sync time="452.618"/>
+&lt;lang:French&gt;&lt;/lang:French&gt;
+</Turn>
+<Turn speaker="spk13" startTime="464.761" endTime="474.731">
+<Sync time="464.761"/>
+Ohňostroj nebyl velkolepý. Bylo to decentní připomenutí státního svátku ve městě, [sta] kde už bude zřejmě navždy spojen s tragédií. Z Nice Jan Šmíd, Česká televize.
+</Turn>
+<Turn speaker="spk1" startTime="474.731" endTime="517.466">
+<Sync time="474.731"/>
+V hlavním městě Francie se změnily honosné oslavy odpoledne ve [sta] střety policistů s demonstranty. Příznivci hnutí žlutých vest se po vojenské přehlídce pokoušely obsadit část Champs-Élysées a postavit tam barikády. 
+<Sync time="486.453"/>
+[sta] Policisti proti nim použili slzný plyn a zadrželi přes sto sedmdesát lidí.
+<Sync time="495.443"/>
+Dva víkendové dny, dvě tragické události na železničních přejezdech. Dnes odpoledne se nehoda stala v Černožicích na Královéhradecku. Po střetu s vlakem zemřeli v osobním automobilu čtyři lidé.
+<Sync time="507.479"/>
+Dva dospěli a dvě děti. Je to nejtragičtější podobná nehoda za posledních patnáct let. V Černožicích je Přemysl Šrámek. Přemysle, už vědí vyšetřovatelé, jak k neštěstí došlo?
+</Turn>
+<Turn speaker="spk14" startTime="517.466" endTime="587.481">
+<Sync time="517.466"/>
+[sta] [no-speech]
+<Sync time="521.401"/>
+[breath] Tak zatím to nevědí. Důležité teď ale bude zjistit, jestli v době neštěstí fungovala světelná signalizace.
+<Sync time="529.801"/>
+#é Ten přejezd totiž nemá závory, takže opravdu bude důležité vědět, zda signalizace fungovala nebo nikoli. Policisté už mají záznam z tohoto zařízení a teď budou porovnávat jednotlivé časy.
+<Sync time="541.93"/>
+Jak tedy ze světelné signalizace, tak z vlaku. Jisté je, že po nehodě světelná signalizace fungovala. Jak už bylo řečeno, v autě zemřeli čtyři lidé.
+<Sync time="554.294"/>
+To auto spěšný vlak před sebou tlačil zhruba čtyřista metrů. Dospělým bylo třicet dva a čtyřicet sedm let. Dětem pak pět a osm. Ve vlaku cestovalo osmdesát lidí.
+<Sync time="566.763"/>
+[sta] Tam se nikomu nic nestalo a většinu z nich pak převezl #é autobus hasičů takzvaný evakuační autobus.
+<Sync time="576.979"/>
+Jak můžete vidět, provoz na trati [sta] stále ještě obnovený nebyl a dopravu zajišťují autobusy.
+</Turn>
+<Turn speaker="spk1" startTime="587.481" endTime="609.542">
+<Sync time="587.481"/>
+A pokračuje taky vyšetřování včerejší srážky vlaku s dodávkou. Ta se stala na Rakovnicku. Podle policie řidič auta zřejmě nerespektoval výstražné znamení na přejezdu. Při této nehodě zemřel jeden člověk a sedm jich utrpělo zranění. 
+<Sync time="600.452"/>
+Na vlaku, který vykolejil, vznikla podle Drážní inspekce škoda pět milionů korun. Na dodávce sto padesát tisíc a na trati deset tisíc. 
+</Turn>
+<Turn startTime="609.542" endTime="613.152">
+<Sync time="609.542"/>
+[music] 
+</Turn>
+<Turn speaker="spk1" startTime="613.152" endTime="653.526">
+<Sync time="613.152"/>
+Americký prezident Donald Trump podle agentury Bloomberg ohlásí příští týden sankce vůči Turecku.
+<Sync time="619.103"/>
+[sta] Partnera z NATO chce potrestat za nákup ruského systému protiletecké obrany &lt;initial&gt; S &lt;/initial&gt;čtyřista. Ruské rakety podle Washingtonu představují riziko pro západní armády a nejsou kompatibilní s jejich technikou.
+<Sync time="632.193"/>
+[sta] Centrum New Yorku takhle obvykle nevypadá. Část Manhattanu ale postihl v noci na dnešek masivní výpadek elektřiny. Bez proudu byl pět hodin statisíce lidí, zřejmě kvůli požáru v rozvodné síti. 
+<Sync time="644.72"/>
+Na území velkém jako Karlovy Vary žije víc obyvatel než v Praze. Přes milion a půl lidí. A blackout připravil hodně dramatických situací.
+</Turn>
+<Turn speaker="spk15" startTime="653.526" endTime="708.474">
+<Sync time="653.526"/>
+[sta] New York bez světel ještě za světla. V sedm večer prozrazovaly výpadek proudu na ulicích jen nefunkční semafory a zavřené obchody.
+<Sync time="663.574"/>
+[sta] Jiná byla situace uvnitř, lidé na desítky minut uvízli ve výtazích nebo v metru, které se postupně zastavilo. [music] [sta] Výpadek přerušil desítky koncertů a divadelních představení. 
+<Sync time="677.777"/>
+[sta] Evakuovat musela třeba Madison Square Garden, kde vystupovala zpěvačka Jennifer Lopezová. New York ale dostál pověsti města, které nespí za žádných okolností.
+<Sync time="690.683"/>
+[sta] Na mnoha místech hudebníci a muzikáloví herci uspořádali improvizované koncerty přímo na ulici. [music] [sta] Kolabující dopravu pomáhali policii řídit kolemjdoucí.
+<Sync time="703.099"/>
+[noise][sta] I přes chaos se nikomu nic nestalo. 
+</Turn>
+<Turn startTime="708.474" endTime="715.08" speaker="spk82">
+<Sync time="708.474"/>
+&lt;lang:English&gt;&lt;/lang:English&gt;
+</Turn>
+<Turn speaker="spk15" startTime="715.08" endTime="723.197">
+<Sync time="715.08"/>
+[sta] Bez elektřiny bylo víc než sedmdesát tisíc tisíc odběrných míst. Příčina výpadku se vyšetřuje, pravděpodobně šlo o požár transformátoru rozvodné sítě. [noise] 
+</Turn>
+<Turn speaker="spk30" startTime="723.197" endTime="726.762">
+<Sync time="723.197"/>
+[overlap]
+</Turn>
+<Turn speaker="spk15" startTime="726.762" endTime="732.327">
+<Sync time="726.762"/>
+Těsně po půlnoci se dodávky podařilo obnovit. Dana Zlatohlávková, Česká televize
+</Turn>
+<Turn speaker="spk1" startTime="732.327" endTime="758.824">
+<Sync time="732.327"/>
+Tři z pěti zaměstnanců, kteří pracují na směny, by uvítali kratší pracovní dobu. Víc než čtvrtina z nich se ale obává, že by zároveň nestihla splnit své úkoly. Zaměstnanci čím dál tím víc oceňují flexibilnost. Když nemají ((pr)) pevnou pracovní dobu a nebo můžou pracovat z domova. 
+<Sync time="747.653"/>
+V posledních letech je to jeden z nejžádanějších benefitů. Podle nedávného rozhodnutí Evropského soudního dvora by ale i v případě práce z domova měli zaměstnavatelé přesně evidovat pracovní dobu.
+</Turn>
+<Turn speaker="spk16" startTime="758.824" endTime="770.35">
+<Sync time="758.824"/>
+[overlap] Do Mexika jel před dvěma lety na dovolenou. Od té doby tam létá a zůstává tam týdny až měsíce a pracuje. Domluvil se tak se zaměstnavatelem.
+</Turn>
+<Turn speaker="spk17" startTime="770.35" endTime="777.62">
+<Sync time="770.35"/>
+Normálně musím odpracovat, to co ostatní kolegové, čtyřicet hodin týdně, s tím, že samozřejmě mám takovou flexibilitu, že to můžu si rozvrhnout jak potřebuju.
+</Turn>
+<Turn speaker="spk16" startTime="777.62" endTime="782.588">
+<Sync time="777.62"/>
+Podobně jako on má o práci z domova v této IT firmě zájem čím dál víc lidí.
+</Turn>
+<Turn speaker="spk18" startTime="782.588" endTime="792.366">
+<Sync time="782.588"/>
+Je tam domluva s manažerem, že v podstatě nějakou dobu pracuje na home office a logicky sledujeme potom ten čas, který si vykazuje někam do systému našeho interního.
+</Turn>
+<Turn speaker="spk16" startTime="792.366" endTime="808.978">
+<Sync time="792.366"/>
+Evidenci toho, kdy přesně zaměstnanec pracoval, a to bez ohledu na to, odkud, nařizuje evropský soud. Opatření by mělo lidem pomoct, aby zaměstnavatel dodržoval jejich právo na odpočinek a platil přesčasy.
+<Sync time="805.204"/>
+Podle firem to ale může omezit právě flexibilitu práce. 
+</Turn>
+<Turn speaker="spk19" startTime="808.978" endTime="821.519">
+<Sync time="808.978"/>
+Obavy z toho, že nejsou dostatečně ochráněná práva zaměstnance, pokud využívá ten institut home officu, jsou trochu přehnaná v této souvislosti.
+</Turn>
+<Turn speaker="spk20" startTime="821.519" endTime="830.192">
+<Sync time="821.519"/>
+Ten, kdo si myslel, že pra s jakýmkoli zaměstnancem může uzavřít něco, kde to je bez hranic, že nemusí nic evidovat a může si dělat co chce, tak to neplatilo nikdy.
+</Turn>
+<Turn speaker="spk16" startTime="830.192" endTime="841.247">
+<Sync time="830.192"/>
+Skloubit práci a osobní život, to vedlo k zavedení flexibilní pracovní doby i tuto firmu. Využívají ji především ti, kteří tu poskytují personální podporu dalším zaměstnancům.
+</Turn>
+<Turn speaker="spk21" startTime="841.247" endTime="846.237">
+<Sync time="841.247"/>
+[sta] Největší vlastně zájem máme samozřejmě ze strany rodičů, maminek, které se vrací po mateřské dovolené. 
+</Turn>
+<Turn speaker="spk16" startTime="846.237" endTime="860.126">
+<Sync time="846.237"/>
+I tady je ale práce všech jasně evidovaná. V Česku musejí zaměstnavatelé zapisovat třeba začátek a konec směny, přesčas, práci v noci nebo dobu v pracovní pohotovosti. Redakce a Michaela Nováková, Česká televize.
+</Turn>
+<Turn speaker="spk1" startTime="860.126" endTime="878.302">
+<Sync time="860.126"/>
+Půl roku vězení a poté vyhoštění na tři roky. Trest pro sedm fotbalových [sta] hooligans, kteří se ve středu večer poprali v centru Bratislavy. Po hromadné bitce zadržela policie vi víc než sto lidí, sedmnáct z nich bylo lehce zranilo. 
+<Sync time="873.325"/>
+Škody na vybavení přilehlých restaurací a barů jdou do tisíčů eur. 
+</Turn>
+<Turn speaker="spk22" startTime="878.302" endTime="891.965">
+<Sync time="878.302"/>
+Bratislavský soud rozhodoval ve zrychleném řízení. Neveřejné jednání trvalo skoro celé odpoledne. Mezi sedmi odsouzenými jsou čtyři Holanďané a tři Poláci. Proti rozsudku nepodali odpor a tak je pravomocný. 
+</Turn>
+<Turn speaker="spk1" startTime="891.965" endTime="912.703">
+<Sync time="891.965"/>
+Zhruba o třetinu se od konce loňského roku snížil počet příspěvků na živobytí, vyplácený částečně v poukázkách. 
+<Sync time="898.167"/>
+Jen v penězích ho od ((lé)) od ledna dostávají znovu třeba lidi se zdravotním postižením nebo senioři. Stravenky úřad práce vedle hotovosti posílal dřív všem, kteří dodávku dávku čerpali déle než půl roku, kvůli obavám z jejího zneužívání.
+</Turn>
+<Turn speaker="spk16" startTime="912.703" endTime="922.82">
+<Sync time="912.703"/>
+[overlap][sta] Od narození špatně vidí. Spoléhat se Květa Šubrtová musí na pomoc vodícího psa. Sama se taky stará o dvě děti. 
+</Turn>
+<Turn speaker="spk23" startTime="922.82" endTime="934.411">
+<Sync time="922.82"/>
+Dřív jsem viděla, jako malá vlastně barvy rozeznávala, stíny a postupem času se zrak zhoršoval tak žes mi to došlo až na světlocit, jenom že světlo a tmu rozeznávám. 
+</Turn>
+<Turn speaker="spk16" startTime="934.411" endTime="953.963">
+<Sync time="934.411"/>
+K tomu má ještě epilepsii. Odkázaná je teď na sociální dávky. Část příspěvku na živobytí dřív dostávala v poukázkách. Od nového roku už ho má celý, podobně jako třeba lidé nad sedmdesát let nebo klienti pobytových sociálních služeb, v penězích.
+<Sync time="949.55"/>
+Stejné pravidlo pak platí i pro takzvané případy hodné zvláštního zřetele.
+</Turn>
+<Turn speaker="spk24" startTime="953.963" endTime="968.599">
+<Sync time="953.963"/>
+Se týkají vždy konkrétní situace, konkrétního klienta. #é To znamená, že Úřad práce #é zhodnocuje, #é v jaké je například sociální situaci, #é jestli je schopen účelně hospodařit s poskytnutými prostředky.
+</Turn>
+<Turn speaker="spk16" startTime="968.599" endTime="987.046">
+<Sync time="968.599"/>
+[sta] Poukázky od úřadu práce vypadají podobně jako klasické stravenky. Lidé si za ně můžou pořídit třeba jídlo, oblečení, drogerii a nebo léky. Co by za ně naopak pořídit neměli jsou třeba cigarety a nebo alkohol. 
+<Sync time="980.505"/>
+Stále je dostávají například manželé Fojtíkovi, kteří žili sedm let na ulici. Ne všude za ně ale můžou nakoupit.
+</Turn>
+<Turn speaker="spk25" startTime="987.046" endTime="993.523">
+<Sync time="987.046"/>
+[sta] To je právě ten problém prostě s těma obchodama. Prostě jako kde kde je příjmaj.
+</Turn>
+<Turn speaker="spk26" startTime="993.523" endTime="998.491">
+<Sync time="993.523"/>
+Dá se kupovat akorát v určitejch já mám tři krámy, kde si můžu nakoupit. 
+</Turn>
+<Turn speaker="spk16" startTime="998.491" endTime="1008.83">
+<Sync time="998.491"/>
+Podle úřadu práce počet obchodů, kde můžou lidé za poukázky nakoupit, postupně roste. Podle lidí, kteří s nimi platí, ale pomalu. Kateřina Jírovská, Česká televize.
+</Turn>
+<Turn speaker="spk1" startTime="1008.83" endTime="1045.146">
+<Sync time="1008.83"/>
+Tropická bouře Barry udeřila v americkém státě Louisiana. V zaplavených oblastech museli někteří obyvatelé vylézt na střechy a čekat na pomoc záchranářů. 
+<Sync time="1018.197"/>
+Na jihu státu už v sobotu nařídily úřady povinnou evakuaci a prezident Trump vyhlásil stav nouze. Podle meteorologů bouře rychle slábne. Zasažené oblasti ovšem i nadále musí počítat s intenzivními srážkami. 
+<Sync time="1031.952"/>
+Nový systém distribuce filmů. V Česku vznikl projekt s názvem Artinii. Služba má za poplatek umožnit jednodušší pořádání veřejných projekcí. Vyzkoušely ji zatím krajanské spolky v zahraničí. 
+</Turn>
+<Turn speaker="spk27" startTime="1045.146" endTime="1050.699">
+<Sync time="1045.146"/>
+Rodiče, kteří chtějí vidět idiota, nechť příjdou do ředitelny.
+</Turn>
+<Turn speaker="spk28" startTime="1050.699" endTime="1075.74">
+<Sync time="1050.699"/>
+[sta] Krajané, kteří chtěli vidět Obecnou školu, přišli na skoro sedmdesát veřejných projekcí. Diváky přilákala osvědčená klasika, tehdy spojená s oslavou osmdesátin Zdeňka Svěráka. [music]
+<Sync time="1065.655"/>
+[sta] Jan Svěrák svůj film přinesl na ta nejodlehlejší místa. Promítalo se v melbournském kině, v přístřešku na Bali nebo jen tak u ohně v novozélandském Oaklandu. 
+</Turn>
+<Turn speaker="spk29" startTime="1075.74" endTime="1091.722">
+<Sync time="1075.74"/>
+Ukázalo se hlavně, že je to možný a že kdyby se pravděpodobně těmdletěm komunitám dal nějakej systém a navazující další [sta] akce, že by to byla struktura nějakýho společenskýho života. Takže by o to měli zájem.
+</Turn>
+<Turn speaker="spk28" startTime="1091.722" endTime="1099.028">
+<Sync time="1091.722"/>
+Nabídka se od té doby rozšířila. Vedle klenotů z Národního filmového archivu je [sta] k dispozici klasika šedesátých let.
+</Turn>
+<Turn speaker="spk30" startTime="1099.028" endTime="1103.362">
+<Sync time="1099.028"/>
+[overlap]
+</Turn>
+<Turn speaker="spk28" startTime="1103.362" endTime="1112.469">
+<Sync time="1103.362"/>
+[overlap] Filmy z devadesátých let i současná produkce. Autoři projektu chtějí do budoucna nabídnout obsah jakékoliv skupině po světě, nejen českým spolkům.
+</Turn>
+<Turn speaker="spk31" startTime="1112.469" endTime="1126.176">
+<Sync time="1112.469"/>
+[sta] Komunita pro nás je ucelenej celek lidí, kteří maj nějakej společnej zájem. Třeba jako lidi, který maj rádi horory. A my naší analýzou děláme to, že hledáme všechny filmy na podobné témata a nabízíme to těmto komunitám.
+</Turn>
+<Turn speaker="spk28" startTime="1126.176" endTime="1142.376">
+<Sync time="1126.176"/>
+[sta] Příležitostí by projekt mohl být i pro Kasárna Karlín. I tohle neziskové centrum stojí na myšlence setkávání. Jsou tu čtyři kina. Mimo jiné v garážích, nebo v bývalém bazénu.
+<Sync time="1136.427"/>
+[sta] Nejúspěšnější je kino pod širým nebem. Diváci v téhle frontě si dnešní program vybrali náhodně.
+</Turn>
+<Turn speaker="spk32" startTime="1142.376" endTime="1147.392">
+<Sync time="1142.376"/>
+[sta] Tak na facebooku událost, kamarádi a tak dále. A Střihorukej Edward to je klasika.
+</Turn>
+<Turn speaker="spk33" startTime="1147.392" endTime="1158.858">
+<Sync time="1147.392"/>
+[sta] Pro nás je v tuhle chvíli naprosto klíčovou na letošní sezónu zejména letošní sezónu letního kina partnerská spolupráce s americkou ambasádou, která nám zprostředkovala celou řadu projekčních práv.
+</Turn>
+<Turn speaker="spk28" startTime="1158.858" endTime="1174.794">
+<Sync time="1158.858"/>
+Nový distributor bude muset organizace, jako je ta v Karlíně, přesvědčit zajímavou nabídkou a cenou. Jestli autoři projektu objevili díru na trhu ukáže čas.
+<Sync time="1171.754"/>
+Širokou veřejnost chtějí oslovit na konci září. Petr Kořínek, Česká televize.
+</Turn>
+<Turn startTime="1174.794" endTime="1178.086">
+<Sync time="1174.794"/>
+[music]
+</Turn>
+<Turn speaker="spk1" startTime="1178.086" endTime="1194.218">
+<Sync time="1178.086"/>
+[sta] Záchranáři. Potřebují být v cíli co nejrychleji. Ztěžují to ale třeba řidiči, kteří jim nedávají přednost nebo zmatkují. Ukážeme v reportáži.
+<Sync time="1187.927"/>
+[sta] Stát přeměřuje po celé zemi hranice pozemků. A majitelé mají strach, aby o část z nich nepřišli. Téma pro Marcelu.
+</Turn>
+<Turn speaker="spk34" startTime="1194.218" endTime="1205.411">
+<Sync time="1194.218"/>
+Ano, jedny kontroly dělá katastrální úřad a druhé ten pozemkový. Hledají černé stavby, ale zkoumají třeba i to, jestli mají lidi plot tam, kde má opravdu být. Víc k tomu řeknu už za chvíli. 
+</Turn>
+<Turn speaker="spk1" startTime="1205.411" endTime="1236.094">
+<Sync time="1205.411"/>
+[music] V Žatci si připomněli vypálení obce Český Malín na Ukrajině. Založili ji kdysi přistěhovalci právě ze Žatecka, Lounska a Rakovnicka. 
+<Sync time="1216.271"/>
+[sta] Přesně před šestasedmdesáti lety v ní nacisti povraždili tři sta sedmdesát čtyři lidí. Dnešní piety se zúčastnili i pamětníci druhé světové války. 
+<Sync time="1225.791"/>
+[sta] Byl mezi nimi taky čtyřiadevadesátiletý Václav Kuchyňka, jehož známému, Alexandru Činkovi, se podařilo před malínským masakrem jen těsně uniknout.
+</Turn>
+<Turn speaker="spk35" startTime="1236.094" endTime="1244.13">
+<Sync time="1236.094"/>
+On hnal ten dobytek a tam někde u lesa se jim to rozeběhlo, tak kluci to využili a ((tě)) některý zdrhli. 
+</Turn>
+<Turn speaker="spk1" startTime="1244.13" endTime="1257.366">
+<Sync time="1244.13"/>
+Na jednoho dlužníka jeden exekutor. Pravidlo, které by do zákona mohla zavést vládní novela exekučního a občanského soudního řádu.
+<Sync time="1251.581"/>
+Ministerstvo spravedlnosti si od ní slibuje omezení počtu případů, kdy má jeden člověk víc exekucí. 
+</Turn>
+<Turn speaker="spk36" startTime="1257.366" endTime="1263.331">
+<Sync time="1257.366"/>
+Patnáct let těžil uhlí. Pak ale musel kvůli zdraví skončit a začal si hledat novou práci. 
+</Turn>
+<Turn speaker="spk37" startTime="1263.331" endTime="1274.259">
+<Sync time="1263.331"/>
+Jsem dělal strojníka, nakladače, zámečníka, svářeče. No a to už nebyly take plat takový plat, takže nestíhal jsem splcet a pak to už jenom naskakovalo všechno.
+</Turn>
+<Turn speaker="spk36" startTime="1274.259" endTime="1286.102">
+<Sync time="1274.259"/>
+Úvěry řešil dalšími půjčkami. Výsledek celkem 7 exekucí vedených na pěti různých úřadech. Kromě Ostravy taky v Šumperku, Přerově, Brně a Praze. S většinou z nich proto komunikuje hlavně písemně.
+</Turn>
+<Turn speaker="spk37" startTime="1286.102" endTime="1288.665">
+<Sync time="1286.102"/>
+Je to, že, dálka. Kdybych tam měl dojížděť.
+</Turn>
+<Turn speaker="spk36" startTime="1288.665" endTime="1305.3">
+<Sync time="1288.665"/>
+Právě to by měla změnit vládní novela. Podle ní by všechny pohledávky vůči jednomu dlužníkovi automaticky měl řešit ten exekutor, který začal vymáhat jako první. 
+<Sync time="1297.869"/>
+Kromě toho vláda počítá i s tím, že by počáteční náklady na exekuci musel dopředu zaplatit věřitel. Stejně jako zálohu.
+</Turn>
+<Turn speaker="spk38" startTime="1305.3" endTime="1316.404">
+<Sync time="1305.3"/>
+Taková opatření by omezila počet podávaných exekučních návrhů a #é exekuční řízení by byla ukončována v odpovídající době.
+</Turn>
+<Turn speaker="spk36" startTime="1316.404" endTime="1329.505">
+<Sync time="1316.404"/>
+S tím ale většina exekutorů i některé neziskové organizace nesouhlasí. Vadí jim hlavně to, že vládní návrh nepočítá s takzvanou místní příslušností.
+<Sync time="1324.781"/>
+Exekutora by tak podle něj dál vybíral věřitel. Bez ohledu na to, kde dlužník bydlí. 
+</Turn>
+<Turn speaker="spk39" startTime="1329.505" endTime="1344.105">
+<Sync time="1329.505"/>
+Musíte nahlížet do spisů. Máte důvod, protože jsou třeba zablokovaný účty, tak to tam je zaplatit osobně. Když to bude z jednoho konce republiky na druhý, tak to tomu dlužníkovi objektivně zvýší výdaje.
+</Turn>
+<Turn speaker="spk36" startTime="1344.105" endTime="1349.56">
+<Sync time="1344.105"/>
+Ve sněmovně už přitom teď leží opoziční návrh, který tzv. krajskou teritorialitu zavádí.
+</Turn>
+<Turn speaker="spk40" startTime="1349.56" endTime="1359.18">
+<Sync time="1349.56"/>
+Podle Pirátů by měl být jeden dlužník, jeden povinný v místě bydliště. To znamená místní příslušnost exekutorů a určování těch exekucí automaticky soudem, tak aby byl exekutor opravdu nezávislý.
+</Turn>
+<Turn speaker="spk36" startTime="1359.18" endTime="1371.516">
+<Sync time="1359.18"/>
+Vláda ale už loni oznámila, že opoziční návrh nepodpoří. Podle ní by vedl k zahlcení soudů a prodloužení exekučních řízení. Vybírat mezi oběma předlohami budou poslanci. Andrea Holešová a Johana Šulcová, Česká televize.
+</Turn>
+<Turn startTime="1371.516" endTime="1375.94">
+<Sync time="1371.516"/>
+[music]
+</Turn>
+<Turn speaker="spk1" startTime="1375.94" endTime="1387.769">
+<Sync time="1375.94"/>
+Před třiceti lety začala v Československu výroba kompaktních disků, tehdy jediného média, které umožňovalo špičkový digitální záznam a poslech třeba hudby. V Loděnici u Berouna se cédéčka vyrábějí dodnes.
+</Turn>
+<Turn speaker="spk42" startTime="1387.769" endTime="1393.101">
+<Sync time="1387.769"/>
+Československo se zařadilo mezi těch několik málo zemí světa, které vyrábějí kompaktní disky. 
+</Turn>
+<Turn speaker="spk41" startTime="1393.101" endTime="1408.743">
+<Sync time="1393.101"/>
+Byla to tehdy velká sláva. Na zahájení výroby se do Loděnice přijel podívat i tehdejší nejmocnější muž v zemi Miloš Jakeš. 
+<Sync time="1401.461"/>
+A vysvětloval, co znamená přestavba, která měla tehdy zachránit skomírající ekonomiky socialistických zemí.
+</Turn>
+<Turn speaker="spk43" startTime="1408.743" endTime="1413.648">
+<Sync time="1408.743"/>
+Že ono se to tkne každýho, po každým to chce víc, jestli máme líp žít.
+</Turn>
+<Turn speaker="spk41" startTime="1413.648" endTime="1421.635">
+<Sync time="1413.648"/>
+Přímo ve výrobě pak stačil odsoudit petici Několik vět, která se šířila zemí a pod níž se začaly podepisovat tisíce lidí. 
+</Turn>
+<Turn speaker="spk43" startTime="1421.635" endTime="1433.908">
+<Sync time="1421.635"/>
+Takový petice a prostě různý prohlášení jo k ničemu nepřispívají, poněvadž u nás je dost možností, aby se každý vyjádřil na pracovišti, v místě svého působiště.
+</Turn>
+<Turn speaker="spk41" startTime="1433.908" endTime="1441.439">
+<Sync time="1433.908"/>
+Realita ale byla jiná. Mělo se mlčet a pracovat. V Loděnici se tehdy cédéčka vyráběla na tři směny 
+</Turn>
+<Turn speaker="spk44" startTime="1441.439" endTime="1452.105">
+<Sync time="1441.439"/>
+Každý se na skaždé operaci pod svoji práci podepíše. Tím pádem potom máme zpětně možnost zjišťovat, do jaké míry byl způsoben kým ten zmetek a možnost ty lidi za nekvalitní práci ((pos)) postihovat.
+</Turn>
+<Turn speaker="spk41" startTime="1452.105" endTime="1480.481">
+<Sync time="1452.105"/>
+Zvládnutí špičkové technologie komunistický režim prezentoval jako velký úspěch. Československo bylo ze socialistických zemí jediné, kde se kompaktní disky vyráběly. 
+<Sync time="1462.525"/>
+Všechny stroje ale byly dovezeny ze Západu. Tenhle hydraulický lis tu funguje dodnes. Nástup internetu znamenal pro cédéčka ústup ze slávy.
+<Sync time="1474.126"/>
+Ještě před deseti lety jich v Loděnici vyrobili přes sto miliónů. Dnes pouhých patnáct.
+</Turn>
+<Turn speaker="spk45" startTime="1480.481" endTime="1507.313">
+<Sync time="1480.481"/>
+V řadě zemí, jako je Itálie, jako je Francie, jako je Německo, tak je, Japonsko, tak je cédéčko pořád ještě hodně populární formát. [noise] Jeho postavení na trhu ale nejspíš bude slábnout dál
+<Sync time="1494.48"/>
+Takový comeback, jaký se podařil kdysi odepisovaným vinylovým deskám, kterých v Loděnici vyrábějí už dva krát víc než cédéček, se neočekává.Ivan Lukáš, Česká televize
+</Turn>
+<Turn speaker="spk1" startTime="1507.313" endTime="1575.779">
+<Sync time="1507.313"/>
+Když jsme mluvili o hudbě, bankovka s Karlem Gottem měla u fanoušků úspěch. Pět tisíc kusů vykoupili za čtyři hodiny. Někteří zájemci na prodej čekali v centru Prahy už od pátku.
+<Sync time="1517.838"/>
+Všimla si toho i zahraniční média. Suvenýr s podobiznou zpěváka, který dnes slaví osmdesátiny, stála padesát korun. Má nulovou nominální hodnotu, ta sběratelská ale zřejmě poroste
+<Sync time="1529.071"/>
+Ke svému jubileu natočil Karel Gott se Symfonickým orchestrem Českého rozhlasu taky novou verzi hitu Jdi za štěstím. Dnes poprvé zazněla v éteru.
+<Sync time="1538.835"/>
+[music]
+<Sync time="1547.968"/>
+[music]
+<Sync time="1559.17"/>
+Záchranáři se při cestě na místo zásahu stále častěji setkávají s šoféry, kteří jim nedají přednost, neuhnou nebo zmatkují. V lepším případě to znamená jen zdržení.
+<Sync time="1568.66"/>
+Řidiči sanitek nebo hasičských vozů jsou na podobné situace připravení, přesto někdy nedokážou zabránit srážce
+</Turn>
+<Turn speaker="spk46" startTime="1575.779" endTime="1582.173">
+<Sync time="1575.779"/>
+[noise] [sta] Říčany, ani ne dva týdny zpět. K požáru lesa tahle cisterna málem nedojela. 
+</Turn>
+<Turn startTime="1582.173" endTime="1586.726">
+<Sync time="1582.173"/>
+[noise] 
+</Turn>
+<Turn speaker="spk46" startTime="1586.726" endTime="1590.182">
+<Sync time="1586.726"/>
+Za volantem tehdy seděl nadporučík Milan Jiráček.
+</Turn>
+<Turn speaker="spk47" startTime="1590.182" endTime="1600.146">
+<Sync time="1590.182"/>
+[noise] Ten prostřední řidič v tý koloně vozidel začal to první auto předjíždět, tudíž se dostal do mý do mýho jízdního pruhu.
+</Turn>
+<Turn speaker="spk46" startTime="1600.146" endTime="1606.136">
+<Sync time="1600.146"/>
+[noise] [sta] Co dělat věděl. Na podobné situace je vyškolený a navíc se s nimi prý setkává téměř denně.
+</Turn>
+<Turn speaker="spk47" startTime="1606.136" endTime="1613.416">
+<Sync time="1606.136"/>
+Jsem byl teda nucen strhnout řízení toho velkýho vozidla ke straně. Samozřejmě jsem musel začat intenzivně brzdit.
+</Turn>
+<Turn speaker="spk46" startTime="1613.416" endTime="1631.598">
+<Sync time="1613.416"/>
+Ve sto kilometrech v hodině mu taky přálo štěstí. Jen takhle vypadá čístá brzdná dráha stejného auta v poloviční rychlosti. Od kuželu až po předek auta to dělá zhruba patnáct až dvacet metrů.
+<Sync time="1625.751"/>
+ S reakční dobout může být tato vzdálenost až dvojnásobná. Tady už hasiči dobrzdit nestačili.
+</Turn>
+<Turn speaker="spk48" startTime="1631.598" endTime="1640.105">
+<Sync time="1631.598"/>
+[noise] [sta] Bylo zřejmé, že osobníní vozidlo uhybá ke straně, #é začalo uhybat, ale bohužel na poslední chvíli si to rozmyslelo.
+</Turn>
+<Turn speaker="spk46" startTime="1640.105" endTime="1648.628">
+<Sync time="1640.105"/>
+V případě nehody musí vyjet k zásahu jiné auto. Drahocenné vteřiny ale utíkají i v momentě, kdy hasiči, podobně jako tady, srážku odvrátí.
+</Turn>
+<Turn speaker="spk47" startTime="1648.628" endTime="1654.813">
+<Sync time="1648.628"/>
+[sta] Když se chci s timdletim autem rozject, tak protože to váží podstatně velkou hnotnost, má to nějakých dvacet tun, tak to nějakou dobu trvá. 
+</Turn>
+<Turn speaker="spk46" startTime="1654.813" endTime="1662.445">
+<Sync time="1654.813"/>
+[sta] Další typická situace tentokrát z Berouna. Auta se uhybají, na úzké krajnici dokonce přibrzdí. Jenže přímo proti sobě. 
+</Turn>
+<Turn speaker="spk47" startTime="1662.445" endTime="1670.286">
+<Sync time="1662.445"/>
+[overlap] [sta] Určitě ten průjezdnej pruh potřebujem v šířce alespoň těch třech metrů. 
+</Turn>
+<Turn speaker="spk48" startTime="1670.286" endTime="1673.013">
+<Sync time="1670.286"/>
+Todle se nám taky stává velmi často, že zastaví dvě vozidla vedle sebe.
+</Turn>
+<Turn speaker="spk46" startTime="1673.013" endTime="1681.238">
+<Sync time="1673.013"/>
+S podobnými incidenty se dnes taky řidič Zdeněk Vrána setkává prý mnohem častěji než před třinácti lety, kdy u pražské záchranky nastupoval.
+</Turn>
+<Turn speaker="spk48" startTime="1681.238" endTime="1688.272">
+<Sync time="1681.238"/>
+Za denní směnu máme plus mínus kolem osmi výjezdů,  při těch dvou nám řidiči udělají nějaký tady ten manévr, který my nečekáme.
+</Turn>
+<Turn speaker="spk46" startTime="1688.272" endTime="1699.054">
+<Sync time="1688.272"/>
+Na rozdíl od hasičů je navíc [sta] pro posádku sanity vedle rychlosti důležitá taky plynulost jízdy. Prudké zabrždění rovná se ohrožení naloženého pacienta. Denisa Kotková, Česká televize.
+</Turn>
+<Turn speaker="spk1" startTime="1699.054" endTime="1714.093">
+<Sync time="1699.054"/>
+[music] Obavy lidí z toho, jestli mají v pořádku své pozemky a další nemovitosti. Po celém Česku prověřují úředníci hranice parcel a jejich využití. Nacházejí taky neevidované budovy, postavené načerno
+</Turn>
+<Turn speaker="spk34" startTime="1714.093" endTime="1755.19">
+<Sync time="1714.093"/>
+Cíl téhle revize je jednoduchý. Aby skutečnost odpovídala tomu, co uvádí katastr. Kontroly začaly už před dvěma lety a skončí nejdřív v roce dva tisíce třicet. Do té doby budou napříč českem vidět pracovníci s těmito přístroji.
+<Sync time="1728.441"/>
+[noise]
+<Sync time="1741.999"/>
+V některých oblastech taky geodeti vytvářejí úplně nové katastrální mapy. Až šedesát procent těch stávajících vzniklo před rokem osmnáct set třicet šest a současnému uspořádání pozemků už dávno neodpovídají. 
+</Turn>
+<Turn speaker="spk49" startTime="1755.19" endTime="1774.806">
+<Sync time="1755.19"/>
+Nejdřív je potřeba pečlivě zaměřit, teprve pak může geodet zaznamenat skutečnou polohu hranice mezi pozemky. [sta] Ta se od té v katastru může lišit až o několik metrů.
+<Sync time="1767.402"/>
+Některá místa totiž mapovali zeměměřiči naposledy v devatenáctém století. Ti současní proto staré záznamy musí přepsat.
+</Turn>
+<Turn speaker="spk50" startTime="1774.806" endTime="1785.88">
+<Sync time="1774.806"/>
+[sta] Tendle přístroj, tomu říkáme totální stanice. Měří vzdálenosti, úhly, ze kterých se pak počítají souřadnice podrobných bodů, právě těch odsouhlasených hranic.
+</Turn>
+<Turn speaker="spk51" startTime="1785.88" endTime="1797.866">
+<Sync time="1785.88"/>
+Vidíme, jak vypadá měřičský náčrt. Zelená čára to jsou hranice, který jsou odsouhlasený, došlo tam ke shodě mezi vlastníky.
+</Turn>
+<Turn speaker="spk49" startTime="1797.866" endTime="1812.5">
+<Sync time="1797.866"/>
+Černá naopak značí, že si majitelé musí hranice svých pozemků ještě vyjasnit. Jinak budou platit dál ty z doby rakouského císařství. To nechtěl třeba Josef Stoklas. Po dohodě se sousedem proto nechal do katastru zapsat to, co je na první pohled evidentní.
+</Turn>
+<Turn speaker="spk52" startTime="1812.5" endTime="1816.699">
+<Sync time="1812.5"/>
+[sta] Tady je hranice. Tady přesně je hranice takhle. Tam to jde zase z tam je dál už zase Kulík.
+</Turn>
+<Turn speaker="spk51" startTime="1816.699" endTime="1820.108">
+<Sync time="1816.699"/>
+A tohle je taky vaše ještě? [overlap] To už není.
+</Turn>
+<Turn speaker="spk49" startTime="1820.108" endTime="1831.796">
+<Sync time="1820.108"/>
+Kromě mapování se na většině území revidují taky další údaje v katastru. Úředníci třeba kontrolují, jestli zapsaný druh pozemku odpovídá tomu skutečnému. V Otvici na Ústecku s tím začali v březnu.
+</Turn>
+<Turn speaker="spk53" startTime="1831.796" endTime="1835.262">
+<Sync time="1831.796"/>
+My jsme z katastrálního úřadu a provádíme tady revizi katstru.
+</Turn>
+<Turn speaker="spk49" startTime="1835.262" endTime="1841.536">
+<Sync time="1835.262"/>
+Majitelům několika nemovitostí, které spolu sousedí, taky navrhli, aby je sloučili pod jedno parcelní číslo. 
+</Turn>
+<Turn speaker="spk54" startTime="1841.536" endTime="1844.948">
+<Sync time="1841.536"/>
+My jsme se tam dostavili, provedlo se sloučení.
+</Turn>
+<Turn speaker="spk55" startTime="1844.948" endTime="1856.844">
+<Sync time="1844.948"/>
+My jsme to odmítli, protože máme tisíc metrů a 400 metrů a máme tam dvě stavby. A kdybysme to jednou chtěli rozdělit, museli bysme projít kolečko zase rozdělování pozemku.
+</Turn>
+<Turn speaker="spk49" startTime="1856.844" endTime="1869.075">
+<Sync time="1856.844"/>
+Nejčastějším problémem jsou ale neevidované budovy. Lidé zapomínají nahlásit třeba garáže nebo přístavby. Za to jim podle zákona hrozí pokuta i další sankce. I když ty úředníci ukládají spíš výjimečně.
+</Turn>
+<Turn speaker="spk54" startTime="1869.075" endTime="1876.481">
+<Sync time="1869.075"/>
+Musím se přiznat, že za tech osmnáct let, co dělám na katastru, tak jsme ještě pokutu nevypisovali.
+</Turn>
+<Turn speaker="spk49" startTime="1876.481" endTime="1883.917">
+<Sync time="1876.481"/>
+Shovívavost má ale své meze. Zvlášť pokud vlastník nespolupracuje a ani po výzvě úředníků nedodá potřebné dokumenty.
+</Turn>
+<Turn speaker="spk56" startTime="1883.917" endTime="1897.531">
+<Sync time="1883.917"/>
+Katastr zapíše na list vlastnictví záznam pro další řízení, které je k nahlédnutí na internetu, je zapsané na listu vlastnictví, takže vlastník může mít i problémy například s půjčkou.
+</Turn>
+<Turn speaker="spk49" startTime="1897.531" endTime="1912.124">
+<Sync time="1897.531"/>
+Vyhnout se takovýmto komplikacím přitom není tak složité. Stačí pravidelně kontrolovat, jestli skutečný stav nemovitosti odpovídá tomu v katastru. Pokud ne, měl by to majitel začít řešit nejlépe okamžitě. Krajské redakce a Johana Šulcová, Česká televize. 
+</Turn>
+<Turn speaker="spk34" startTime="1912.124" endTime="1983.437">
+<Sync time="1912.124"/>
+O tom, kdy a kde se revize budou, rozhoduje příslušný katastrální úřad. Lidi by se ale o nich měli dozvědět aspoň dva měsíce předem. Nejčastěji z obecní vývěsky.
+<Sync time="1922.421"/>
+Kontroloři zkoumají, jak už víme, hranice pozemku, ale taky typy staveb, které na nich stojí. Včetně obvodů. Letos je v plánu prověrka až šesti set katastrálních území. Celkem jich je ovšem v republice víc než třináct tisíc.
+<Sync time="1935.871"/>
+No a důvodem celé téhle rozsáhlé akce je hlavně to, že vlastníci často neplní povinnosti, které jim ukládá zákon. Tou nejdůležitější je ono hlášení jakýchkoliv změn, které se nemovitosti týkají.
+<Sync time="1948.171"/>
+Třeba její dostavba nebo naopak ostranění. Majitelé na to mají třicet dnů. V opačném případě můžou dostat pokutu až padesát tisíc korun. Podnikatelé dvojnásobek.
+<Sync time="1958.597"/>
+Správně zanesené údaje jsou přitom důležité například při výpočtu daně z nemovitosti nebo jejího převodu.
+<Sync time="1966.94"/>
+Kromě kontrol pokračují na některých místech taky úpravy parcel. Ty provádí státní pozemkový úřad, aby zlepšil jejich uspořádání. 
+<Sync time="1975.406"/>
+Ne všichni majitelé ale se změnami souhlasí. Třeba ve Skryjích na Tišnovsku někteří tvrdí, že tím přišli až o stovky metrů čtverečních.
+</Turn>
+<Turn speaker="spk57" startTime="1983.437" endTime="1995.133">
+<Sync time="1983.437"/>
+Louka u lesa Jaroslava Babičky. Takže o sedm metrů vás zkrátili? [overlap]
+<Sync time="1992.279"/>
+Cesta k chatě Jana Zavrtálka. Oni vám tím pádem teď půl cesty jakoby sebrali? 
+</Turn>
+<Turn speaker="spk58" startTime="1995.133" endTime="2003.023">
+<Sync time="1995.133"/>
+No ano, já ještě netuším netuším, ale asi tuším. Jestli je to odsuď tam, not tak je to neprůjezdný. 
+</Turn>
+<Turn speaker="spk57" startTime="2003.023" endTime="2006.286">
+<Sync time="2003.023"/>
+A dlouhé roky obdělávaný pozemek nad domem Karla Mašíčka.
+</Turn>
+<Turn speaker="spk59" startTime="2006.286" endTime="2016.42">
+<Sync time="2006.286"/>
+Geodeti, když to tady vytyčili, tak mě tvrdí, že od tohoto místa, kde stojím já, tak směrem [overlap] nahoru to patří sousedce a mě patří jenom tendleten kousek.
+</Turn>
+<Turn speaker="spk57" startTime="2016.42" endTime="2022.451">
+<Sync time="2016.42"/>
+Jedna vesnice na Tišnovsku a hned několik nespokojených místních s tím, kde se objevily tyto značky.
+</Turn>
+<Turn speaker="spk59" startTime="2022.451" endTime="2029.889">
+<Sync time="2022.451"/>
+Je osazený úplně nesmyslně uprostřed mých pozemků, tak tady jak seču trávu, tak docházím tam je bod, tam je bod, tady přibyl jakýsik bod zatlučený do země.
+</Turn>
+<Turn speaker="spk61" startTime="2029.889" endTime="2040.457">
+<Sync time="2029.889"/>
+My nejsme ve fázi, kdy bychom vytyčovali konkrétní pozemky konkrétních vlastníků. V tuto chvíli máme pouze vytyčený obvod, kde bychom rádi dělali komplexní pozemkové úpravy.
+</Turn>
+<Turn speaker="spk57" startTime="2040.457" endTime="2047.104">
+<Sync time="2040.457"/>
+Bez odsouhlaseného obvodu nemůže pozemkový úřad pokračovat. Jenže místní nesouhlasí ani s hranicí obvodu.
+</Turn>
+<Turn speaker="spk62" startTime="2047.104" endTime="2058.862">
+<Sync time="2047.104"/>
+To je původní sad, které označli. Neuznali a zarazili nové. [overlap] Je to Čepičkovo z Litavy a je to katastr Litava už. 
+</Turn>
+<Turn speaker="spk61" startTime="2058.862" endTime="2064.95">
+<Sync time="2058.862"/>
+Ty hranice stanovujeme na základě platných digitálních map katastrálních. 
+</Turn>
+<Turn speaker="spk57" startTime="2064.95" endTime="2069.415">
+<Sync time="2064.95"/>
+Jenže sám katastrální úřad přiznává, že digitální mapa může být nepřesná.
+</Turn>
+<Turn speaker="spk63" startTime="2069.415" endTime="2083.955">
+<Sync time="2069.415"/>
+Podkladem pro vznik tédle mapy byla původní mapa vedená na na folii, která vznikla někdy v roce osmnáct set dvacet šest. Údržbou té mapy, která se neustále překreslovala, vznikaly různé deformace, různé chyby.
+</Turn>
+<Turn speaker="spk64" startTime="2083.955" endTime="2088.117">
+<Sync time="2083.955"/>
+A nejhorší je, že se toto všechno udělalo bez přítomnosti vlastníků.
+</Turn>
+<Turn speaker="spk59" startTime="2088.117" endTime="2092.309">
+<Sync time="2088.117"/>
+To nejde řešit tak, že přijedou, chytnou někoho doma na dvoře  a řeknou, tady nám to podepište.
+</Turn>
+<Turn speaker="spk57" startTime="2092.309" endTime="2104.79">
+<Sync time="2092.309"/>
+Právě proto se teď všechny strany dohodly na doměření přímo v terénu. V polovině července se tady sejde jak pozemkový úřad, tak katastrální i většina těch, kteří své hranice reklamují. Redakce a Barbora Žídková, Česká televize. 
+</Turn>
+<Turn speaker="spk34" startTime="2104.79" endTime="2119.095">
+<Sync time="2104.79"/>
+Jestli jsou Lennonovy zdi v Hongkongu černé stavby, to samozřejmě těžko soudit, ale každopádně tato inspirace z Prahy slouží i tamním demonstrujícím k vyjádření názorů, které politici moc slyšet nechtějí. Víc o tom Michal. Už za chvilku.
+</Turn>
+<Turn speaker="spk1" startTime="2119.095" endTime="2141.411">
+<Sync time="2119.095"/>
+[music] K téhle české stopě nan druhém konce světa se dostaneme. Nejdřív do Řecka. Úřady na tamním poloostrově Chalkidiki hlásí konec oprav po sředeční bouři. Ta zabila sedm lidí, včetně dvou českých turistů. [sta]
+<Sync time="2131.866"/>
+[sta] Dnes se podařilo obnovit dodávky vody a elektřiny i v odlehlých oblastech. První celkové odhady škod hovoří o několika desítkách miliónů eur.
+</Turn>
+<Turn speaker="spk65" startTime="2141.411" endTime="2160.005">
+<Sync time="2141.411"/>
+Bouře, před kterými včera znovu varovali meteorologové, se nakonec poloostrovu vyhnuly. Místní návštěvnické centrum už oznámilo, že turistická sezona pokračuje. A někteří hoteliéři a majitelé restaurací snížují ceny.
+<Sync time="2155.456"/>
+Lidí je podle nich na plážích stále málo a chtějí je tak přilákat zpět.
+</Turn>
+<Turn speaker="spk1" startTime="2160.005" endTime="2174.555">
+<Sync time="2160.005"/>
+Potyčkami s policií skončily další demonstrace proti extradičnímu zákonu v Hongkongu. Do ulic opět vyšly desetitisíce lidí. Protestující dosáhli po několika týdnech pozastavení schvalovacího procesu, ale ke zrušení návrhu nedošlo. 
+</Turn>
+<Turn speaker="spk1" startTime="2174.555" endTime="2179.932">
+<Sync time="2174.555"/>
+Velkou oblibu si mezi nimi získala Lennonova zeď, která vznikla jako inspirace Prahou.
+</Turn>
+<Turn speaker="spk66" startTime="2179.932" endTime="2202.137">
+<Sync time="2179.932"/>
+[sta] Nápad, který vzešel z Česka a Hongkončané si ho zamilovali. Lennonova zeď. Sestra té z pražské Kampy se stala nástrojem v zápase o demokracii a symbolem svobody projevu.
+<Sync time="2193.57"/>
+[sta] Vypadá jinak, ale podobně jako Češi před rokem devatenáct se osmdesát devět na ní lidé vyjadřují sympatie protestnímu hnutí.
+</Turn>
+<Turn speaker="spk30" startTime="2202.137" endTime="2222.348">
+<Sync time="2202.137"/>
+&lt;lang:foreign&gt;&lt;/lang:foreign&gt;
+</Turn>
+<Turn speaker="spk66" startTime="2222.348" endTime="2271.285">
+<Sync time="2222.348"/>
+[sta] V roce 2014 ji v Hongkongu založila nadace Prague Freedom Foundation, která podporuje svobodu slova ve světě. 
+<Sync time="2230.6"/>
+Tehdy šlo o volby. První byla u sídla vlády a stala se ikonou Deštníkového hnutí. Když vyšli lidé do ulic kvůli extradičnímu zákonu, přirozeně se k ní vrátili.
+<Sync time="2241.926"/>
+[sta] Teď už jsou v Hongkongu Lennonových zdí desítky a pořád přibývají. Často jsou u stanic metra, kudy denně procházejí tisíce lidí. 
+<Sync time="2250.073"/>
+[sta] Hongkongčané je zakládají v blízkosti hranice, kam chodí nakupovat návštěvníci z Číny, aby se i oni dozvěděli, oč tady jde.
+<Sync time="2258.473"/>
+[sta] Propekingské úderky zdi demolují, proto u nich dobrovolníci drží hlídky. Tohle se stalo před pár dny. Muž zbil mladíka, který zeď chránil. Tam, kde ji vandalové strhou, je za pár hodin zpátky. [sta]
+</Turn>
+<Turn speaker="spk30" startTime="2271.285" endTime="2280.49">
+<Sync time="2271.285"/>
+&lt;lang:foreign&gt;&lt;/lang:foreign&gt;
+</Turn>
+<Turn speaker="spk66" startTime="2280.49" endTime="2305.216">
+<Sync time="2280.49"/>
+[sta] Hongkongčané si váží podpory, kterou mají od jakékoli země. Přestože většina netuší, odkud myšlenka Lennonovy zdi pochází. 
+<Sync time="2289.152"/>
+[sta] Protesty jsou menší, ale neustávají. Lidé se scházejí, ať je vedro nebo lije. Říkají tomu disidentské léto, které může být začátkem dlouhé partyzánské války.
+<Sync time="2301.102"/>
+Barbora Šámalová, Česká televize, Hongkong.
+</Turn>
+<Turn speaker="spk1" startTime="2305.216" endTime="2321.478">
+<Sync time="2305.216"/>
+Už přes pět let rozdávají dobrovolníci v Ostravě bezdomovců každou neděli jídlo. Nově po nich ale radnice chce povolení a potravinářské průkazy.
+<Sync time="2313.646"/>
+Dobročinná akce totiž vadí některým místním, kteří si stěžují na nepořádek. Organizátoři se brání, že jde o klidnou akci.
+</Turn>
+<Turn speaker="spk67" startTime="2321.478" endTime="2329.65">
+<Sync time="2321.478"/>
+Dneska máme polévku zeleninovou #é a k tomu máme ještě kofty, to jsou takové chlebové kuličky.
+</Turn>
+<Turn speaker="spk68" startTime="2329.65" endTime="2347.019">
+<Sync time="2329.65"/>
+V létě, v zimě, o svátcích i během prázdnin. Každou neděli odpoledne rozdává ostravská iniciativa jídlo lidem bez domova. Ti pravidelně čekají před Vítkovickým nádražím.
+<Sync time="2339.384"/>
+[sta] Jídlo získávají od nejrůznějších organizací, případně ho platí sami. Několik let ho ochutnává i Radim Fajkus.
+</Turn>
+<Turn speaker="spk69" startTime="2347.019" endTime="2353.788">
+<Sync time="2347.019"/>
+Skončil jsem na ulici a tady to tady to je super tady to to je charita, která je ne k nezaplacení.
+</Turn>
+<Turn speaker="spk68" startTime="2353.788" endTime="2358.712">
+<Sync time="2353.788"/>
+Kromě lidí bez domova ale teď na dobrovolníky čekají i zástupci radnice a policisté.
+</Turn>
+<Turn speaker="spk70" startTime="2358.712" endTime="2368.874">
+<Sync time="2358.712"/>
+[sta] Já jsem teéžbyla legitimovaná, s tím, že mě strážník oznámil, že tím pádem proti mně bude vedeno přestupkové řízení.
+</Turn>
+<Turn speaker="spk71" startTime="2368.874" endTime="2380.952">
+<Sync time="2368.874"/>
+Vzniklo to na popud spoluobčanů vítkovických, kterým se nelíbí, že každou neděli tyto skupiny lidí bez příštřeší se schází a je jim vydáváno jídlo.
+</Turn>
+<Turn speaker="spk72" startTime="2380.952" endTime="2393.907">
+<Sync time="2380.952"/>
+[sta] Já neříkám, že by neměli podporovat třeba ty bezdomovce, ale mělo by to být někde jinde ne na veřejném místě. No a myslím si, že mezi nima je hodně lidí, že by měli jít pracovat.
+</Turn>
+<Turn speaker="spk70" startTime="2393.907" endTime="2400.676">
+<Sync time="2393.907"/>
+[sta] Jestli bude kriminalizována solidarita s lidmi na okraji společnosti, tak si myslíme, že to není v pořádku. 
+</Turn>
+<Turn speaker="spk68" startTime="2400.676" endTime="2411.085">
+<Sync time="2400.676"/>
+[sta] Radnice Ostravy Vítkovic chce o situaci před Vítkovickým nádražím jednat se samotnými policisty i iniciativou. S těmi prvními se setká už zítra. Pavla Daňková. Česká televize. 
+</Turn>
+<Turn speaker="spk1" startTime="2411.085" endTime="2445.929">
+<Sync time="2411.085"/>
+A teď jedna aktuální zpráva k dnešní tragické nehodě, která se stala v Černošicích na Královéhradecku. Světelná signalizace, podle předběžného zjištění drážní inspekce, fungovala. Připomínám, že při srážce vlaku s autem zemřeli čtyři lidé.
+<Sync time="2425.732"/>
+[music] Lidi opouštějí končící hudební festivaly. Dvacet tisíc jich navštívilo ten ve Vizovicích. Jmenuje se &lt;lang:English&gt;Masters of Rock&lt;lang:English&gt;.
+<Sync time="2434.761"/>
+[sta] Na známé přehlídce metalové hudby vystoupilo jedenačtyřicet kapel. Policisti letošní akci považují za klidnou. Zabývali se jen osmi podnapilými řidiči a čtyřmi krádežemi ve stanech.
+</Turn>
+<Turn speaker="spk73" startTime="2445.929" endTime="2467.579">
+<Sync time="2445.929"/>
+[sta] Poslední koncert metalového maratonu skončí o půlnoci. Hned zítra ráno pak začnou tisíce lidí bourat takováto stanová městečka a z Vizovic odjíždět. 
+<Sync time="2455.786"/>
+[sta] Budou pod striktním policejním dohledem, kontroly budou probíhat na všech silnicích z Vizovic. Alkotestery pak budou dokonce k dispozici i na místní policejní služebně.
+</Turn>
+<Turn speaker="spk1" startTime="2467.579" endTime="2480.313">
+<Sync time="2467.579"/>
+V Táboře se zase po třech dnech blíží ke konci multižánrový festival &lt;lang:English&gt;Mighty Sounds&lt;lang:English&gt;. Navštívilo ho kolem jedenácti tisíc lidí. Až do zítřka kvůli akci potrvá omezení v dopravě v okolí [sta] letiště Čápův dvůr.
+</Turn>
+<Turn speaker="spk74" startTime="2480.313" endTime="2497.806">
+<Sync time="2480.313"/>
+[sta] Organizátoři se snaží obyvatelům z blízkého okolí kompenzovat hluk, který se šíří kolem areálu letiště, a nabízejí jim lístky zdarma. A zkrátily taky dobu konání akce. Veškerá produkce z neděle na pondělí pak skončí kolem půlnoci.
+</Turn>
+<Turn speaker="spk1" startTime="2497.806" endTime="2517.17">
+<Sync time="2497.806"/>
+Tahle opice se jmenuje kahau nosatý. Jejím domovem je indonéské Borneo, ale klíčovou roli v její budoucnosti hrají Češi. Tuzemští ochránci přírody se zapojili do snah o její záchranu.
+<Sync time="2509.378"/>
+Výzkumníci z ústecké zoologické zahrady se snaží prosadit, aby na domovském ostrově vznikla pro tyto opice chráněná oblast.
+</Turn>
+<Turn speaker="spk75" startTime="2517.17" endTime="2553.086">
+<Sync time="2517.17"/>
+Je to nepřehlédnutelný nos. Podle vědců ale hrozí, že jich bude k vidění čím dál méně. [noise] Stanislav Lhota kvůli záchraně kahau nosatých tráví na Borneu s přestávkami už patnáct let. 
+<Sync time="2529.48"/>
+Výzkumný pracovník ústecké zoo a jeho tým se na ostrově snaží o vyhlášení rezervace. Právě v ní by mohla tato zvířata žít.
+<Sync time="2536.886"/>
+Cílem je ochránit životní prostor čtrnácti set nosatých opic. Borneo je jediným místem na světě, kde se vyskytují. Člověk je ale připravuje o jejich přirozené prostředí.
+<Sync time="2546.867"/>
+V místech, kde jsou kahau doma, totiž rychle vznikají plantáže palmy olejné. A problém je i budování průmyslu.
+</Turn>
+<Turn speaker="spk76" startTime="2553.086" endTime="2563.282">
+<Sync time="2553.086"/>
+Se živí listím stromů a ty tlupy zůstávají izolované v poměrně malých zbytcích fragmentech lesa. Ty stromy potom nemaj možnost regenerovat, hynou.
+</Turn>
+<Turn speaker="spk75" startTime="2563.282" endTime="2577.681">
+<Sync time="2563.282"/>
+Pomoci by mohl nový územní plán. Indonésie ho nyní schvaluje a čeští ochranáři přírody si od něj hodně slibují. Podařilo se jim do něj totiž zanést rezervaci, díky které by opice, ale i další zvířata, nebyla zatlačována jen na malé území pralesa.
+</Turn>
+<Turn speaker="spk76" startTime="2577.681" endTime="2587.296">
+<Sync time="2577.681"/>
+V současné době máme asi sto sedmdesát čtverečních kilometrů pobřežních lesů a naše snaha je dostat do té vznikající rezervace co nejvíce z tohohle území.
+</Turn>
+<Turn speaker="spk75" startTime="2587.296" endTime="2592.671">
+<Sync time="2587.296"/>
+Projekt Pesisir Balikpapan vznikl tady v ústecké zoo. Ta ho ročně podporuje částkou čtvrt milionu korun.
+</Turn>
+<Turn speaker="spk77" startTime="2592.671" endTime="2602.125">
+<Sync time="2592.671"/>
+Přemýšlíme o tom, že by se do financování mohli zapojit i návštěvníci zoologické zahrady, že by koruna ze vstupného vlastně šla na ochranářské projekty.
+</Turn>
+<Turn speaker="spk75" startTime="2602.125" endTime="2610.575">
+<Sync time="2602.125"/>
+Na záchranu nosatých opic přispívají i další české zoo, třeba pražská, plzeňská a liberecká. Renata Malíková, Česká televize, Ústní nad Labem.
+</Turn>
+<Turn speaker="spk1" startTime="2610.575" endTime="2631.216">
+<Sync time="2610.575"/>
+[music] [sta] Ještě pohled na dění v dalších hodinách. Zítra odpoledne bude předsednictvo Sociální demokracie rozhodovat o dalším působení strany ve vládě. 
+<Sync time="2621.349"/>
+[sta] A zítra je zároveň schůze kabinetu. Bude jednat třeba o uvolnění zhruba dvouset devadesáti miliónů korun na pomoc Turecku při migrační krizi.[music]
+</Turn>
+</Section>
+</Episode>
+</Trans>

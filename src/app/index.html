@@ -1,0 +1,66 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>cWeb .trs checker - English</title>
+</head>
+
+<body>
+  <form enctype = "multipart/form-data" action="/cWeb.py" method="post">
+  
+  <h1>English</h1>
+
+    <table>
+      <tr>
+        <th>Commands to exclude</th>
+        <th>Options<th>
+      <tr>
+
+      <tr>
+        <td>
+          <ol id='exclude_list' start="0">
+            <li><input type="checkbox" name="excl_cmds" value="0">ID checker</li>
+            <li><input type="checkbox" name="excl_cmds" value="1">Disallowed characters</li>
+            <li><input type="checkbox" name="excl_cmds" value="2">Bracket hunter</li>
+            <li><input type="checkbox" name="excl_cmds" value="3">Sound tag validator</li>
+            <li><input type="checkbox" name="excl_cmds" value="4">Initial tag validator</li>
+            <li><input type="checkbox" name="excl_cmds" value="5">Language tag validator</li>
+            <li><input type="checkbox" name="excl_cmds" value="6">Numeral hunter</li>
+            <li><input type="checkbox" name="excl_cmds" value="7">Filler word validator</li>
+            <li><input type="checkbox" name="excl_cmds" value="8">White space validator</li>
+            <li><input type="checkbox" name="excl_cmds" value="9">UTF-8 validator</li>
+            <li><input type="checkbox" name="excl_cmds" value="10">Inaudible tag validator</li>
+            <li><input type="checkbox" name="excl_cmds" value="11">Punctuation space validator</li>
+            <li><input type="checkbox" name="excl_cmds" value="12">Disallowed strings</li>
+            <li><input type="checkbox" name="excl_cmds" value="13">Turn validator</li>
+            <li><input type="checkbox" name="excl_cmds" value="14">Segment length validator</li>
+            <li><input type="checkbox" name="excl_cmds" value="15">Tilde checker</li>
+            <li><input type="checkbox" name="excl_cmds" value="16">Speaker label checker</li>
+            <li><input type="checkbox" name="excl_cmds" value="17" checked>Short turns</li>
+            <li><input type="checkbox" name="excl_cmds" value="18"> Dissalowed tag combinations</li>
+            <li><input type="checkbox" name="excl_cmds" value="19"> Choppy segments</li>
+            <li><input type="checkbox" name="excl_cmds" value="20"> Tag punctuation</li>
+            <li><input type="checkbox" name="excl_cmds" value="21"> Unused speakers</li>
+            <li><input type="checkbox" name="excl_cmds" value="22"> Duplicate speaker name</li>
+            <li><input type="checkbox" name="excl_cmds" value="23"> Disallowed uses of Transcriber</li>
+            <li><input type="checkbox" name="excl_cmds" value="24"> Code errors</li>
+          </ol>
+        </td>
+
+        <td>
+          <label for="lang">Select language</label>
+          <select name="lang" id="lang">
+            <option value="english" selected>English</option>
+          </select>
+          <br/>
+
+          <label for="upload_files">File(s)</label>
+          <input type="file" name="upload_files" id="upload_files" multiple><br>
+        </td>
+      </tr>
+    </table>
+
+    <input type = "submit" value = "Check" />
+
+  </form>
+</body>
+</html>

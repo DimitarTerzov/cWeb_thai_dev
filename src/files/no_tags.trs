@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="eng-101" audio_filename="SEC_Football_004" version="3" version_date="200216">
+<Speakers>
+<Speaker id="spk1" name="Woman 1" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk2" name="Man 1" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk3" name="Man 2" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk4" name="Man 3" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk5" name="Man 4" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk6" name="Man 5" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk7" name="Man 6" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk8" name="Man 7" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk9" name="Man 8" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk10" name="Man 9" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk11" name="Man 10" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk12" name="Michael Brandon" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk13" name="Shane " check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk15" name="Man 11" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk16" name="Kirby Smart" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk18" name="Jake" check="no" type="male" dialect="native" accent="" scope="local"/>
+<Speaker id="spk19" name="George" check="no" type="male" dialect="native" accent="" scope="local"/>
+</Speakers>
+<Episode>
+<Section type="report" startTime="0" endTime="3215.909">
+<Turn startTime="0" endTime="5.195">
+<Sync time="0"/>
+</Turn>
+<Turn speaker="spk1" startTime="5.195" endTime="6.557">
+<Sync time="5.195"/>
+When the replay official did wrong.
+</Turn>
+<Turn speaker="spk2" startTime="6.557" endTime="10.968">
+<Sync time="6.557"/>
+I I I'm not gonna comment on that. I'll get fined for the rest of my life if I could comment on that.
+</Turn>
+<Turn speaker="spk3" startTime="10.968" endTime="20.242">
+<Sync time="10.968"/>
+We had a great belief in our locker room. We didn't have to do anything special, just be us. I was so proud of this team. We had so much fun, it all ought to be illegal.
+</Turn>
+<Turn speaker="spk4" startTime="20.242" endTime="23.808">
+<Sync time="20.242"/>
+Coach (()) is that something you just ignore?
+</Turn>
+<Turn speaker="spk5" startTime="23.808" endTime="35.571">
+<Sync time="23.808"/>
+Yeah, yeah, yeah you ignore it cause one week you're getting fired. The next week you're gonna take another job, and I'm worried about (()) SEC West championship and so, yes, to answer your question.
+</Turn>
+<Turn speaker="spk6" startTime="35.571" endTime="48.832">
+<Sync time="35.571"/>
+Our purpose is to win, make no mistake about it, but it's to win the right way. And our goal, our stated goal is going to be to win the Sunbelt, uh, sorry to win the SEC East.
+</Turn>
+</Section>
+</Episode>
+</Trans>
