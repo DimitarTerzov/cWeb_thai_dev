@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-__version__ = "1.22"
+__version__ = '1.27'
 import os
 import sys
 import re
@@ -11,13 +11,6 @@ import io
 cgitb.enable()
 
 
-DISABLE_COMMANDS = {
-    0: True, 1: False, 2: False, 3: False, 4: False,
-    5: False, 6: False, 7: False, 8: False, 9: False,
-    10: False, 11: False, 12: False, 13: False, 14: False,
-    15: False, 16: False, 17: False, 18: False, 19: False,
-    20: False, 21: False, 22: False, 23: False, 24: False
-}
 LANGUAGE_CODES = {
     u'bul': u'Bulgarian',
     u'eng': u'English',
@@ -231,14 +224,22 @@ def command3(filepath):
 #Initial tag validator
 def command4(filepath):
 
-    punctuation = u"""[^_'.,!?\s:;—"\-~]"""
-    allowed_characters_after_tag = [u"s", u"n"]
-    allowed_expressions_before_tag = [u"l'"]
-    regex = re.compile(ur"(?P<content>(?P<before_first>(\b\w*\b)|[\S\w]+)?(?P<first_open>&lt;)(?P<first_tag>[int\w\s/\\]+)(?P<first_close>&gt;)(?P<inner_text>.*?)(?P<second_open>&lt;)(?P<forward>[\\/\s]*)(?P<second_tag>[int\w\s]+)(?P<second_close>&gt;)(?P<after_second>\b\w*\b|{}+)?)".format(punctuation), re.UNICODE)
-    opening_tag = re.compile(ur'&lt;[int\w\s]+&gt;', re.UNICODE)
-    closing_tag = re.compile(ur'&lt;\s*/[int\w\s]+&gt;', re.UNICODE)
+    punctuation = u"""[^_.,!?\s:;—"\-~]"""
+    # To add new accent extend the list
+    # followind the pattern
+    accents = [u'๊', u'ี', u'็']
+    accents = u''.join(accents)
+    # Add characters to the list like:
+    # allowed_characters_after_tag = [u"s", u"n"]
+    #allowed_expressions_before_tag = [u"l'", u"O'"]
+    allowed_characters_after_tag = [u""]
+    allowed_expressions_before_tag = [u""]
+    regex = re.compile(ur"(?P<content>(?P<before_first>(\b\w*\b)|[\S\w]+)?&lt;(?P<first_tag>[int\w\s/\\]+)&gt;(?P<inner_text>.*?)&lt;(?P<forward>[\\/\s]*)(?P<second_tag>[int\w\s]+)&gt;(?P<after_second>\b\w*\b|{}+)?)".format(punctuation), re.UNICODE)
+    opening_tag = re.compile(ur'\w*\s*({0})*&lt;[int\w\s]+&gt;\s*\w*'.format(allowed_expressions_before_tag), re.UNICODE)
+    closing_tag = re.compile(ur'\w*\s*&lt;\s*/[int\w\s]+&gt;[\s\W]*\w*', re.UNICODE)
 
     found = {}
+    tag_exists = False
     with io.open(filepath, 'r', encoding='utf') as f:
         ln = -1
         for line in f:
@@ -252,6 +253,7 @@ def command4(filepath):
                 open_tag = re.search(opening_tag, line).group(0)
                 content = _prepare_content(open_tag)
                 found[ln] = [4, "Missing closing tag", content]
+                tag_exists = True
 
             if (
                 re.search(opening_tag, line) is None and
@@ -260,19 +262,15 @@ def command4(filepath):
                 close_tag = re.search(closing_tag, line).group(0)
                 content = _prepare_content(close_tag)
                 found[ln] = [4, "Missing opening tag", content]
+                tag_exists = True
 
             for m in re.finditer(regex, line):
+                tag_exists = True
                 error_tag = m.group('content')
                 error_tag = _prepare_content(error_tag)
 
                 # Check tag syntax
-                if (
-                    m.group('first_open') != '&lt;' or
-                    m.group('first_close') != '&gt;' or
-                    m.group('second_open') != '&lt;' or
-                    m.group('second_close') != '&gt;' or
-                    m.group('forward') != '/'
-                ):
+                if m.group('forward') != u'/':
                     found[ln] = [4, 'Initial tag error', error_tag]
                     continue
 
@@ -328,14 +326,17 @@ def command4(filepath):
 
                     # Catch anything different from pattern `WEB`, `Ph.D.`
                     elif len(content) > 2:
-                        if re.match(ur'[\w.]*', content, re.UNICODE).group() != content:
+                        if re.match(ur'[\w.{}]*'.format(accents), content, re.UNICODE).group() != content:
                             found[ln] = [4, 'Initial tag error', error_tag]
 
                 # If text doesn't feet pattern `W. E. B.` -> error
                 elif len(inner_content) > 1:
                     for content in inner_content:
-                        if not re.match(ur'^\w\.$', content, re.UNICODE):
+                        if not re.match(ur'^\w[{}]?\.$'.format(accents), content, re.UNICODE):
                             found[ln] = [4, 'Initial tag error', error_tag]
+
+    if not tag_exists and not found:
+        found[1] = [4, 'Be sure to include initial tag for any and all initialisms. If there were no initialisms, feel free to ignore this error.', '']
 
     return found
 
@@ -368,7 +369,7 @@ def command5(filepath):
 
     punctuation_marks = u""":,-'_!—".?;"""
 
-    regex = re.compile(ur'(?P<content>(?P<before_first>\b\w*\b)?(?P<first_open>(?:&lt;))(?P<first_tag>/*\s*\w*\s*):(?P<first_tag_lang>\s*\w*\s*)(?P<first_close>(?:&gt;))(?P<inner_text>.*?)(?P<second_open>(?:&lt;))(?P<forward>[\/]*)(?P<second_tag>\s*\w*\s*):(?P<second_tag_lang>\s*\w*\s*)(?P<second_close>(?:&gt;))(?P<after_second>\b\w*\b)?)', re.UNICODE)
+    regex = re.compile(ur'(?P<content>(?P<before_first>\b\w*\b)?&lt;(?P<first_tag>/*\s*\w*\s*):(?P<first_tag_lang>\s*\w*\s*)&gt;(?P<inner_text>.*?)&lt;(?P<forward>[\/]*)(?P<second_tag>\s*\w*\s*):(?P<second_tag_lang>\s*\w*\s*)&gt;(?P<after_second>\b\w*\b)?)', re.UNICODE)
     opening_tag = re.compile(ur'&lt;\s*\w*\s*:\s*\w*\s*&gt;', re.UNICODE)
     closing_tag = re.compile(ur'&lt;/\s*\w*\s*:\s*\w*\s*&gt;', re.UNICODE)
 
@@ -422,13 +423,7 @@ def command5(filepath):
                         continue
 
                     # Check for wrong syntax
-                    if (
-                        match.group('first_open') != '&lt;' or
-                        match.group('first_close') != '&gt;' or
-                        match.group('second_open') != '&lt;' or
-                        match.group('second_close') != '&gt;' or
-                        match.group('forward') != '/'
-                    ):
+                    if match.group('forward') != u'/':
                         found[ln] = [5, "Tag syntax error", content]
                         continue
 
@@ -499,12 +494,12 @@ def command7(filepath):
     # Allowed punctuation after tag
     punctuation = u"[:',!—_\".?\-;]"
     #default skip tags
-    skip_tags = u"(#uh|#um|#ah|#er|#hm)"
-    possible_missing_tag = u"(uh|um|ah|er|hm)"
-    filler_re = re.compile(ur'[\W\w]?#\w*\W?', re.UNICODE)
+    skip_tags = u'(#อือ|#อืม|#เอ่อ|#อ่า|#เออ|#ฮืม)'
+    filler_re = re.compile(ur'[\W\w]?#\w[\s\w][\s\w]\w?\W?', re.UNICODE)
 
     found = {}
     in_section = False
+    tag_exists = False
     with io.open(filepath, 'r', encoding='utf') as f:
         ln = 0
         for line in f:
@@ -517,6 +512,7 @@ def command7(filepath):
                 in_section = False
 
             for match in re.finditer(filler_re, line):
+                tag_exists = True
 
                 target = match.group().strip()
                 # Pass filler tag with tilde.
@@ -529,12 +525,9 @@ def command7(filepath):
                     and in_section
                 ):
                     found[ln] = [7, 'Invalid filler tag', target.encode('utf')]
-                    continue
 
-
-            for match in re.finditer(ur'\s{0}\W'.format(possible_missing_tag), line, re.UNICODE):
-                if ln not in found and in_section:
-                    found[ln] = [7, 'Possible filler tag missing #', match.group().encode('utf')]
+    if not tag_exists:
+        found[1] = [7, 'No fillers tags were found. Please refer to the project page to learn about the required use of filler tags.', '']
 
     return found
 
@@ -677,15 +670,15 @@ def command11(filepath):
     exlusion_list = ['-nya', '-exclusion2', '-exclusion3']
 
     #match a symbol with one space
-    regex = re.compile(ur'(\s\-\s)|(\s[\.,，。!?-])|([\.,，。!?-]\s{3,})|([\.,，。!?][^\s])', re.UNICODE)
+    regex = re.compile('(\s\-\s)|(\s[\.,，。!?-])|([\.,，。!?-]\s{3,})')
 
     found = {}
 
-    with io.open(filepath, 'r', encoding='utf') as f:
+    with open(filepath,'r') as f:
         ln = -1
         for line in f:
             ln = ln + 1
-            line = line.rstrip(" \r\n")
+            line = line.rstrip("\r\n")
 
             #if line starts with < and ends in >
             if line.startswith('<') and line.endswith('>'):
@@ -694,6 +687,7 @@ def command11(filepath):
 
             for m in re.findall(regex, line):
 
+                label = ''
                 val = exlusion_list[0]
 
                 #allow ' - '
@@ -703,12 +697,9 @@ def command11(filepath):
                     val = m[0]
                 elif m[2]:
                     val = m[1]
-                elif m[3]:
-                    val = ''
 
                 if not val in exlusion_list:
-                    found[ln] = [11, 'Punctuation spacing issue', line.encode('utf')]
-
+                    found[ln] = [11, 'Punctuation spacing issue', line]
     return found
 
 
@@ -748,11 +739,11 @@ def command12(filepath):
 #Speaker validator
 def command13(filepath):
 
-    regex = re.compile(ur'<Turn\s*(?:speaker\s*=\s*"(spk[0-9]+?)")?(?:.*?)startTime\s*=\s*"([0-9.]+)"(?:.*?)(?:speaker\s*=\s*"(spk[0-9]+?)")?', re.UNICODE)
+    speaker_re = re.compile(ur'spk[0-9]+', re.UNICODE)
 
     found = {}
 
-    prev_spk='none'
+    prev_spk = None
     sync = False
     sync_count = 0
     end_time = 0
@@ -830,17 +821,15 @@ def command13(filepath):
                 sync = False
                 sync_count = 0
 
-            for m in re.findall(regex, line):
-                # If turn is speakerless -> set speaker to 'none'.
-                if m[0] == '' and m[2] == '':
-                    speaker = 'none'
+            if '<Turn' in line:
+                m = re.search(speaker_re, line)
+                if m is None:
+                    speaker = None
                 else:
-                    # If turn has speaker -> take it.
-                    speaker = m[0] if m[0] != '' else m[2]
-
+                    speaker = m.group()
                     if speaker == prev_spk:
-                        report = '{} at {}'.format(speaker, m[1])
-                        found[ln] = [13, 'Sequential turns by the same speaker', report.encode('utf')]
+                        report = '{} at {}'.format(speaker, start_value).encode('utf')
+                        found[ln] = [13, 'Sequential turns by the same speaker', report]
 
                 #save speaker
                 prev_spk = speaker
@@ -851,16 +840,22 @@ def command13(filepath):
 #Segment length validator
 def command14(filepath):
 
-    regex = re.compile(ur'<Sync\s*time\s*=\s*"\s*([0-9\.]+)\s*"\s*/>')
+    regex = re.compile(ur'<Sync\s*time\s*=\s*"\s*([0-9\.]+)\s*"\s*/>', re.UNICODE)
+    section_end_time =re.compile(ur'<Section.*?endTime="([\d.]+)', re.UNICODE)
 
     found = {}
     cur_time = 0
 
     with io.open(filepath, 'r', encoding='utf') as f:
-        ln = 1
+        ln = 0
         for line in f:
             line = line.rstrip("\r\n")
+
+            if re.search(section_end_time, line) is not None:
+                end_time = float(re.search(section_end_time, line).group(1))
+
             for m in re.findall(regex, line):
+                last_sync_line = ln
 
                 seg_time = float(m)
                 seg_len = seg_time - cur_time
@@ -870,6 +865,13 @@ def command14(filepath):
 
                 #update current time
                 cur_time = seg_time
+
+            if u'</Section>' in line:
+                seg_len = end_time - cur_time
+
+                if seg_len > 15.0:
+                    found[last_sync_line] = [14, 'Segment exceeds limit', 'Sync time="{}"; length: {} seconds'.format(cur_time, seg_len)]
+
 
             ln += 1
 
@@ -973,28 +975,31 @@ def command16(filepath):
 #Short turns
 def command17(filepath):
 
-    regex = re.compile(ur'<Sync time="\s*([0-9\.]+)\s*"/>', re.UNICODE)
+    regex = re.compile('<Sync time="\s*([0-9\.]+)\s*"/>')
+    regez = re.compile("<Sync time=\"" + WWwhitespace +"+[0-9\.]+\"/>|<Sync time=\"[0-9\.]+"+ WWwhitespace+"\"/>|<Sync time=\""+ WWwhitespace +"+[0-9\.]+"+ WWwhitespace+"\"/>")
 
     found = {}
-    cur_time = None
+    cur_time = 0.0
 
-    with io.open(filepath, 'r', encoding='utf') as f:
-        ln = 0
+    with open(filepath,'r') as f:
+        ln = -1
         for line in f:
             ln = ln + 1
             line = line.rstrip("\r\n")
             for m in re.findall(regex, line):
 
                 seg_time = float(m)
-                if cur_time is not None:
-                    seg_len = seg_time - cur_time
+                seg_len = seg_time - cur_time
 
-                    if seg_len < 3.0:
-                        found[last_seq_row] = [17, 'Segment is less than 3 seconds, possible use of [overlap] or combine with other segment', 'Sync time="' + str(cur_time) + '" length: ' + str(seg_len) + ' seconds']
+                if seg_len < 3.0:
+                    found[ln] = [17, 'Segment is less than 3 seconds, possible use of [overlap] or combine with other segment', 'Sync time="' + str(cur_time) + '" length: ' + str(seg_len) + ' seconds']
 
                 #update current time
                 cur_time = seg_time
-                last_seq_row = ln
+            for m in re.findall(regez, line):
+
+                found[ln] = [17, 'Unexpected white space in sync time tag', line]
+
 
     return found
 
@@ -1020,16 +1025,7 @@ def command18(filepath):
 
 # Choppy segments
 def command19(filepath):
-    # Segments shorter than that amount of time in seconds
-    # are potentially Chopped segments. You can control it
-    # by changing this value.
-    time_amount_left = 12    # Y
-    # Segments that contain that number of words at the beginning
-    # or at end are potentially Chopped segments. You can control
-    # this by changing the value of variable.
-    number_of_words = 2     # X
-
-    partial_line_end_marks = u":,\-_!—.?;\]"
+    partial_line_end_marks = u":,\-_!—.?;"
     line_end_marks = u'!.?'
     turn_end = re.compile(ur'<\s*/\s*Turn\s*>', re.UNICODE)
 
@@ -1038,86 +1034,49 @@ def command19(filepath):
 
         ln = 0
         sync_time = None
-        segment_lenght = None
+        segment_lenght = 0
         in_turn = False
         check_for_choppy = False
         for line in f:
-            line = line.rstrip(" \r\n")
+            line = line.rstrip("\r\n")
 
             if not line:
                 ln += 1
                 continue
 
             if re.search(ur'<\s*Turn', line, re.UNICODE) is not None:
-                sync_time = None
-                segment_lenght = None
-                chopped_at_end = False
-                chopped_line_end = None
-                check_for_choppy = False
+                start_time = re.search(ur'startTime\s*=\s*"\s*(?P<value>[\d.]+?)\s*"', line, re.UNICODE)
+                sync_time = float(start_time.group('value'))
                 in_turn = True
 
-            elif in_turn:
+            elif in_turn and re.search(ur'<\s*Sync\s*time', line, re.UNICODE) is not None:
+                new_sync_time = re.search(ur'<\s*Sync\s*time\s*=\s*"\s*(?P<value>[\d.]+?)\s*"', line, re.UNICODE).group('value')
+                new_sync_time = float(new_sync_time)
+                segment_lenght = new_sync_time - sync_time
+                sync_time = new_sync_time
 
-                if re.search(ur'<\s*Sync\s*time', line, re.UNICODE) is not None:
+            elif in_turn and re.search(turn_end, line) is None:
 
-                    new_sync_time = re.search(ur'<\s*Sync\s*time\s*=\s*"\s*(?P<value>[\d.]+?)\s*"', line, re.UNICODE).group('value')
-                    new_sync_time = float(new_sync_time)
-                    if sync_time is not None:
-                        segment_lenght = new_sync_time - sync_time
+                if check_for_choppy and segment_lenght <= 12:
+                    chopped = line.split()[0]
+                    if (
+                        len(chopped[: -1]) <= 5 and
+                        re.search(ur'[{}]$'.format(line_end_marks), chopped, re.UNICODE) is not None and
+                        chopped[0].islower()
+                    ):
+                        found[ln] = [19, "Choppy segment", line.encode('utf')]
 
-                    sync_time = new_sync_time
-                    in_sync = True
-
-                elif in_sync:
-
-                    if check_for_choppy and segment_lenght <= time_amount_left:
-
-                        for index in xrange(number_of_words):
-                            try:
-                                chopped = line.split()[index]
-                            except IndexError:
-                                pass
-                            else:
-                                if (
-                                    re.search(ur'[{}]$'.format(line_end_marks), chopped, re.UNICODE) is not None and
-                                    chopped[0].islower()
-                                ):
-                                    found[ln] = [19, "Choppy segment", line.encode('utf')]
-                                    break
-
-                    if chopped_at_end and segment_lenght <= time_amount_left and line[0].islower():
-                        found[ln-2] = [19, "Choppy segment", chopped_line_end.encode('utf')]
-
-                    if re.search(ur'[{}]$'.format(partial_line_end_marks), line, re.UNICODE) is None:
-
-                        for index in xrange(-(number_of_words + 1), -1):
-                            try:
-                                chopped = line.split()[index]
-                            except IndexError:
-                                check_for_choppy = False
-                                chopped_at_end = False
-                                chopped_line_end = None
-                            else:
-                                if re.search(ur'[{}]$'.format(line_end_marks), chopped, re.UNICODE) is not None:
-                                    chopped_at_end = True
-                                    chopped_line_end = line
-                                    break
-
-                                else:
-                                    chopped_at_end = False
-                                    chopped_line_end = None
-
-                        check_for_choppy = True
-
-                    else:
-                        check_for_choppy = False
-                        chopped_at_end = False
-                        chopped_line_end = None
-
-                    in_sync = False
+                if (
+                    re.search(ur'[{}]$'.format(partial_line_end_marks), line, re.UNICODE) is None
+                ):
+                    check_for_choppy = True
+                else:
+                    check_for_choppy = False
 
             elif re.search(turn_end, line) is not None:
+                sync_time = None
                 in_turn = False
+                check_for_choppy = False
 
             ln += 1
 
@@ -1203,11 +1162,7 @@ def command22(filepath):
 
 
 def command23(filepath):
-    bad_strings = [
-        'Who nb=', 'Topic id=', 'Event',
-        'mode=', 'channel=', 'fidelity=',
-        'Background time=', 'Comment'
-    ]
+    bad_strings = ['Who nb=', 'Topic id=', 'Event' 'mode=', 'channel=', 'fidelity=', 'Background time=']
     found = {}
     regex = re.compile(".*<(.*)>.*")
 
@@ -1215,7 +1170,6 @@ def command23(filepath):
         ln = -1
         for line in f:
             ln = ln + 1
-            line = line.rstrip('\r\n')
             inner = re.findall(regex, line)
             # < inner >
             for txt in inner:
@@ -1243,10 +1197,6 @@ def command23(filepath):
                         elif bad == 'Background time=':
                             found[ln] = [23, 'Disallowed use of Transcriber', '(' + bad + ') | ' + line]
                             break
-                        elif bad == 'Comment':
-                            found[ln] = [23, 'Disallowed use of Transcriber', '(' + bad + ') | ' + line]
-                            break
-
     return found
 
 
@@ -1393,11 +1343,6 @@ for f in json_files:
             pass
 
         for i in cmd_ids:
-
-            # Omit command if disabled.
-            if DISABLE_COMMANDS[i]:
-                continue
-
             rv = eval("command" + str(i))(f)
 
             if i == 0:

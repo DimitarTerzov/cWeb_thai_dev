@@ -52,6 +52,7 @@ CONTENT = [
     u"French &lt;initial&gt; ONU &lt;/initial&gt;sn\n",                               # 41
     u'&lt;initial&gt;\n',                                                                                 # 42
     u'mais plutôt en termes &lt;/initial&gt;\n',                                            # 43
+    u'ซ๊เอ็นเอ็น &lt;/initial&gt;, I was a student\n',                                        # 44
 ]
 EXCLUDE = [
     1, 3, 9, 22, 23, 24,
@@ -61,8 +62,9 @@ EXCLUDE = [
 CATCH = [
     0, 2, 4, 5, 6, 7, 8, 10,
     11, 12, 13, 14, 15, 16,
-    17, 18, 19, 20, 21, 25, 27,
-    28, 30, 40, 41, 42, 43
+    17, 18, 19, 20, 21, 25,
+    27, 28, 30, 40, 41, 42,
+    43, 44
 ]
 
 
