@@ -54,22 +54,24 @@ tag &lt;/lang:English&gt; ČSSD and voice &lt;/lang:English&gt; perspective\n", 
     u'<Sync time="379.522"/>\n', # 41
     u'&lt;lang:Portuguese&gt;\n', # 42
     u'<Sync time="411.39"/>\n', # 43
-    u"Peut-être pas en termes d'hommes mais plutôt en termes d'armes &lt;/lang: Portuguese&gt; ou \
-de ressources financières. Et comment va évoluer la question de l'est de \
-l'Ukraine et les relations internationales tout court.\n" # 44
-    u'</Turn>\n', # 45
+    u"เมื่อเจาะจงต่อกรรที่วิสาหกิจขนาดกลาง ขนาดเล็ก &lt;/lang: Portuguese&gt; \
+และขนาดย่อม ทั้งหลายต่างได้รับผลกระทบจากโรคระบาดครั้งนี้\n", # 44
+    u'<Sync time="411.39"/>\n', # 45
+    u'ให้การสนับ สนุนก &lt;lang:Portuguese&gt; ารสร้างควา มมั่นคงแก่พนักงานในองค์การ\n',    # 46
+    u'</Turn>\n', # 47
 ]
 
 EXCLUDE = [
     0, 1, 3, 4, 5, 7, 9, 11, 13, 15,
     17, 19, 21, 23, 25, 26, 27, 29,
     31, 32, 33, 35, 37, 38, 39, 41,
-    43, 45
+    43, 45, 47
 ]
 
 CATCH = [
     2, 6, 8, 10, 12, 14, 16, 18, 20,
-    22, 24, 28, 30, 34, 36, 40, 42, 44
+    22, 24, 28, 30, 34, 36, 40, 42,
+    44, 46
 ]
 
 
