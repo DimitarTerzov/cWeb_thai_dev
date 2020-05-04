@@ -47,17 +47,18 @@ CONTENT = [
     u'&lt;initial&gt; AY &lt;/initial&gt;_liikkeen\n',                                    # 36
     u'&lt;initial&gt; AY &lt;/initial&gt;—liikkeen\n',                                   # 37
     u'Ремонтират улица <initial>Богориди<initial>.\n',                       # 38
-    u'&lt;initial&gt; AY &lt;/initial&gt;~ \n',                                                  # 39
-    u"French &lt;initial&gt; ONU &lt;/initial&gt;n\n",                               # 40
-    u"French &lt;initial&gt; ONU &lt;/initial&gt;sn\n",                               # 41
-    u'&lt;initial&gt;\n',                                                                                 # 42
-    u'mais plutôt en termes &lt;/initial&gt;\n',                                            # 43
-    u'ซ๊เอ็นเอ็น &lt;/initial&gt;, I was a student\n',                                        # 44
+    u'&lt;initial&gt; AY &lt;/initial&gt;~ \n',                                               # 39
+    u"French &lt;initial&gt; ONU &lt;/initial&gt;n\n",                                 # 40
+    u"French &lt;initial&gt; ONU &lt;/initial&gt;sn\n",                                # 41
+    u'&lt;initial&gt;\n',                                                                                # 42
+    u'สวัสดีค่ะ คุณผู้ฟังคะ &lt;/initial&gt; สวัสดีค่ะ คุณผู้ฟังคะ\n',                        # 43
+    u'ซ๊เอ็นเอ็น &lt;/initial&gt;, สวัสดีค่ะ คุณผู้ฟังคะ\n',                                      # 44
 ]
 EXCLUDE = [
     1, 3, 9, 22, 23, 24,
-    26, 29, 31, 32, 33, 34,
-    35, 36, 37, 38, 39
+    26, 29, 31, 32, 33,
+    34, 35, 36, 37, 38,
+    39
 ]
 CATCH = [
     0, 2, 4, 5, 6, 7, 8, 10,

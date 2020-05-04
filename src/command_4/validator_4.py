@@ -8,19 +8,19 @@ from command_5.validator_5 import _prepare_content
 #Initial tag validator
 def command4(filepath):
 
-    punctuation = u"""[^_.,!?\s:;—"\-~]"""
+    punctuation = u"""_.,!?:;—"\-~"""
     # To add new accent extend the list
     # followind the pattern
-    accents = [u'๊', u'ี', u'็']
+    accents = [u'๊', u'ี', u'็', u'่', u'ั', u'ู้', u'ุ']
     accents = u''.join(accents)
     # Add characters to the list like:
     # allowed_characters_after_tag = [u"s", u"n"]
     #allowed_expressions_before_tag = [u"l'", u"O'"]
     allowed_characters_after_tag = [u""]
     allowed_expressions_before_tag = [u""]
-    regex = re.compile(ur"(?P<content>(?P<before_first>(\b\w*\b)|[\S\w]+)?&lt;(?P<first_tag>[int\w\s/\\]+)&gt;(?P<inner_text>.*?)&lt;(?P<forward>[\\/\s]*)(?P<second_tag>[int\w\s]+)&gt;(?P<after_second>\b\w*\b|{}+)?)".format(punctuation), re.UNICODE)
-    opening_tag = re.compile(ur'\w*\s*({0})*&lt;[int\w\s]+&gt;\s*\w*'.format(allowed_expressions_before_tag), re.UNICODE)
-    closing_tag = re.compile(ur'\w*\s*&lt;\s*/[int\w\s]+&gt;[\s\W]*\w*', re.UNICODE)
+    regex = re.compile(ur"(?P<content>(?P<before_first>(\b\w*\b)|[\S\w]+)?&lt;(?P<first_tag>[int\w\s/\\]+)&gt;(?P<inner_text>.*?)&lt;(?P<forward>[\\/\s]*)(?P<second_tag>[int\w\s]+)&gt;(?P<after_second>\b\w*\b|[^\s{}]+)?)".format(punctuation), re.UNICODE)
+    opening_tag = re.compile(ur'[\w{0}{1}]*\s*&lt;[int\w\s]+&gt;[\s{0}]*[\w{0}{1}]*'.format(punctuation, accents), re.UNICODE)
+    closing_tag = re.compile(ur'[\w{0}{1}]*\s*&lt;\s*/[int\w\s]+&gt;[\s{0}]*[\w{0}{1}]*'.format(punctuation, accents), re.UNICODE)
 
     found = {}
     tag_exists = False
