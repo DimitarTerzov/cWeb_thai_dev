@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-__version__ = '1.28'
+__version__ = '1.29'
 import os
 import sys
 import re
@@ -16,7 +16,8 @@ DISABLE_COMMANDS = {
     5: False, 6: False, 7: False, 8: False, 9: False,
     10: False, 11: False, 12: False, 13: False, 14: False,
     15: False, 16: False, 17: False, 18: False, 19: False,
-    20: False, 21: False, 22: False, 23: False, 24: False
+    20: False, 21: False, 22: False, 23: False, 24: False,
+    25: False
 }
 LANGUAGE_CODES = {
     u'bul': u'Bulgarian',
@@ -480,7 +481,7 @@ def command6(filepath):
         ln = -1
         for line in f:
             ln = ln + 1
-            line = line.rstrip("\r\n")
+            line = line.rstrip(" \r\n")
 
             #if line starts with < and ends in >
             if line.startswith('<') and line.endswith('>'):
@@ -739,19 +740,14 @@ def command12(filepath):
 
     return found
 
-#Speaker validator
+#Turn validator
 def command13(filepath):
 
-    speaker_re = re.compile(ur'spk[0-9]+', re.UNICODE)
-
     found = {}
-
-    prev_spk = None
     sync = False
     sync_count = 0
     end_time = 0
     sync_line = None
-
     with io.open(filepath, 'r', encoding='utf') as f:
         ln = 0
         for line in f:
@@ -823,19 +819,6 @@ def command13(filepath):
             elif "</Turn>" == line and not sync:
                 sync = False
                 sync_count = 0
-
-            if '<Turn' in line:
-                m = re.search(speaker_re, line)
-                if m is None:
-                    speaker = None
-                else:
-                    speaker = m.group()
-                    if speaker == prev_spk:
-                        report = '{} at {}'.format(speaker, start_value).encode('utf')
-                        found[ln] = [13, 'Sequential turns by the same speaker', report]
-
-                #save speaker
-                prev_spk = speaker
 
     return found
 
@@ -1145,7 +1128,7 @@ def command20(filepath):
     with io.open (filepath, 'r', encoding='utf') as f:
         ln = 0
         for line in f:
-            line = line.rstrip('\r\n')
+            line = line.rstrip(' \r\n')
 
             if line.startswith(u'<') and line.endswith(u'>'):
                 ln += 1
@@ -1325,9 +1308,42 @@ def command24(filepath):
     return found
 
 
+# Sequential turns by same speaker
+def command25(filepath):
+
+    speaker_re = re.compile(ur'spk\s*[0-9]+', re.UNICODE)
+    start_time_re = re.compile(ur'startTime\s*=\s*"\s*(?P<value>[\d.]+?)\s*"', re.UNICODE)
+
+    found = {}
+    prev_spk = None
+    with io.open(filepath, 'r', encoding='utf') as f:
+        ln = 0
+        for line in f:
+            ln += 1
+            line = line.rstrip('\r\n')
+
+            if '<Turn' in line:
+                start_time_match = re.search(start_time_re, line)
+                start_value = float(start_time_match.group('value').strip())
+                m = re.search(speaker_re, line)
+                if m is None:
+                    speaker = None
+                else:
+                    speaker = m.group()
+                    speaker = speaker.replace(' ', '')
+                    if speaker == prev_spk:
+                        report = '{} at {}'.format(speaker, start_value).encode('utf')
+                        found[ln] = [25, 'Sequential turns by the same speaker', report]
+
+                #save speaker
+                prev_spk = speaker
+
+    return found
+
+
 print "Content-type:text/html; charset=UTF-8\r\n\r\n"
 
-cmd_ids = range(25)
+cmd_ids = range(26)
 
 # Create instance of FieldStorage
 form = cgi.FieldStorage()
