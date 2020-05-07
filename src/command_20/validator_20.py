@@ -12,7 +12,7 @@ def command20(filepath):
     with io.open (filepath, 'r', encoding='utf') as f:
         ln = 0
         for line in f:
-            line = line.rstrip('\r\n')
+            line = line.rstrip(' \r\n')
 
             if line.startswith(u'<') and line.endswith(u'>'):
                 ln += 1

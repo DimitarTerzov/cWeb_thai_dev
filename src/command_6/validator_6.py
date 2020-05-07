@@ -14,7 +14,7 @@ def command6(filepath):
         ln = -1
         for line in f:
             ln = ln + 1
-            line = line.rstrip("\r\n")
+            line = line.rstrip(" \r\n")
 
             #if line starts with < and ends in >
             if line.startswith('<') and line.endswith('>'):
