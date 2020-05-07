@@ -5,19 +5,14 @@ import re
 import io
 
 
-#Speaker validator
+#Turn validator
 def command13(filepath):
 
-    speaker_re = re.compile(ur'spk[0-9]+', re.UNICODE)
-
     found = {}
-
-    prev_spk = None
     sync = False
     sync_count = 0
     end_time = 0
     sync_line = None
-
     with io.open(filepath, 'r', encoding='utf') as f:
         ln = 0
         for line in f:
@@ -89,19 +84,6 @@ def command13(filepath):
             elif "</Turn>" == line and not sync:
                 sync = False
                 sync_count = 0
-
-            if '<Turn' in line:
-                m = re.search(speaker_re, line)
-                if m is None:
-                    speaker = None
-                else:
-                    speaker = m.group()
-                    if speaker == prev_spk:
-                        report = '{} at {}'.format(speaker, start_value).encode('utf')
-                        found[ln] = [13, 'Sequential turns by the same speaker', report]
-
-                #save speaker
-                prev_spk = speaker
 
     return found
 

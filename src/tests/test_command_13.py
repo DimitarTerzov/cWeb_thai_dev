@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 
-import pytest
-
 from utils import temporary_file
 from command_13.validator_13 import command13
 
@@ -55,8 +53,8 @@ CONTENT = [
     u'<Sync time="152.316"/>\n',                                            # 45
     u'&lt;lang:Foreign&gt; (()) &lt;/lang:Foreign&gt;\n',                   # 46
     u'</Turn>\n',                                                           # 47
-    u'<Turn speaker="spk5" startTime="160.404" endTime="161.589">\n',       # 48
-    u'<Sync time="160.404"/>\n',                                            # 49
+    u'<Turn speaker="spk5" startTime="156.423" endTime="161.589">\n',       # 48
+    u'<Sync time="156.423"/>\n',                                            # 49
     u'&lt;lang:Foreign&gt; (()) &lt;/lang:Foreign&gt;\n',                   # 50
     u'</Turn>\n',                                                           # 51
     u'<Turn speaker="spk4" startTime="197.187" endTime="210.034">\n',       # 52
@@ -106,11 +104,16 @@ CONTENT = [
     u'</Turn>\n',                                                           # 96
 ]
 
-EXCLUDE_ROWS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-                21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 34, 36, 39,
-                42, 43, 44, 45, 46, 47, 49, 50, 51, 53, 54, 56, 57, 59, 60, 62,
-                63, 64, 67, 68, 71, 72, 73, 75, 76, 78, 79, 81, 82, 84, 85, 86, 87,
-                88, 89, 90, 91, 93, 95, 96]
+EXCLUDE_ROWS = [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13,
+    14, 15, 16, 17, 18, 19, 20, 21, 22,
+    23, 24, 25, 26, 27, 28, 29, 30, 31,
+    34, 36, 39, 42, 43, 44, 45, 46, 47,
+    48, 49, 50, 51, 53, 54, 56, 57, 59,
+    60, 62, 63, 64, 67, 68, 71, 72, 73,
+    75, 76, 78, 79, 81, 82, 84, 85, 86,
+    87, 88, 89, 90, 91, 93, 95, 96
+]
 
 
 def test_command_13(tmpdir):
@@ -123,7 +126,6 @@ def test_command_13(tmpdir):
     for row in EXCLUDE_ROWS:
         assert row not in found
 
-    assert "Sequential turns by the same speaker" in found[11]
     assert "Empty segments are not allowed" in found[32]
     assert "Empty segments are not allowed" in found[33]
     assert "Empty segments are not allowed" in found[35]
@@ -131,7 +133,6 @@ def test_command_13(tmpdir):
     assert "Empty segments are not allowed" in found[38]
     assert "Turn out of sync" in found[40]
     assert "Empty segments are not allowed" in found[41]
-    assert "Sequential turns by the same speaker" in found[48]
     assert "Turn out of sync" in found[52]
     assert "Empty segments are not allowed" in found[55]
     assert "Empty segments are not allowed" in found[58]
