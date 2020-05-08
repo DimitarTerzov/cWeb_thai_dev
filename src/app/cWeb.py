@@ -1395,6 +1395,7 @@ transcribers = set()
 for f in json_files:
     all_stats['checked_files'] = all_stats['checked_files'] + 1
 
+    missing_tag_messages = []
     res = []
     total_errors = 0
 
@@ -1423,6 +1424,10 @@ for f in json_files:
 
             if i == 0:
                 transcribers.add(rv.pop('transcriber_id', None))
+
+            if i in [3, 4, 7, 15]:
+                missing_tag_message = rv.pop('warning_message', None)
+                missing_tag_messages.append(missing_tag_message)
 
             if rv:
                 total_errors = total_errors + len(rv.keys())
@@ -1454,6 +1459,12 @@ for f in json_files:
                         '<td>' + res[1]                     + '</td>' + \
                         '<td>' + cgi.escape(res[2])         + '</td></tr>'
                 item_no = item_no + 1
+
+        for missing_tag_message in missing_tag_messages:
+            if missing_tag_message is not None:
+                file_div += '<tr><td>{0}</td><td colspan="6">{1}</td></tr>'.format(item_no, missing_tag_message)
+                item_no += 1
+
         file_div += '</table>'
     file_divs[f] = [file_div, total_errors]
 
