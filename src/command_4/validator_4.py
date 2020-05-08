@@ -117,7 +117,8 @@ def command4(filepath):
                             found[ln] = [4, 'Initial tag error', error_tag]
 
     if not tag_exists and not found:
-        found[1] = [4, 'Be sure to include initial tag for any and all initialisms. If there were no initialisms, feel free to ignore this error.', '']
+        found['warning_message'] = 'Be sure to include initial tag for any and all initialisms. \
+If there were no initialisms, feel free to ignore this error.'
 
     return found
 

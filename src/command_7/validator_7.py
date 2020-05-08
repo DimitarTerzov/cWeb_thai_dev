@@ -42,7 +42,8 @@ def command7(filepath):
                     found[ln] = [7, 'Invalid filler tag', target.encode('utf')]
 
     if not tag_exists:
-        found[1] = [7, 'No fillers tags were found. Please refer to the project page to learn about the required use of filler tags.', '']
+        found['warning_message'] = 'No fillers tags were found. Please refer to the project \
+page to learn about the required use of filler tags.'
 
     return found
 
