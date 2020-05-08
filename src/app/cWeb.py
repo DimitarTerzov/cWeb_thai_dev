@@ -237,7 +237,8 @@ def command3(filepath):
                             tag_exists = True
 
     if not tag_exists and not found:
-        found[1] = [3, 'No sound tag were found. Please refer to the project page to learn about the required use of sound tags.', '']
+        found['warning_message'] = 'No sound tags were found. \
+Please refer to the project page to learn about the required use of sound tags.'
 
     return found
 
@@ -354,7 +355,8 @@ def command4(filepath):
                             found[ln] = [4, 'Initial tag error', error_tag]
 
     if not tag_exists and not found:
-        found[1] = [4, 'Be sure to include initial tag for any and all initialisms. If there were no initialisms, feel free to ignore this error.', '']
+        found['warning_message'] = 'Be sure to include initial tag for any and all initialisms. \
+If there were no initialisms, feel free to ignore this error.'
 
     return found
 
@@ -545,7 +547,8 @@ def command7(filepath):
                     found[ln] = [7, 'Invalid filler tag', target.encode('utf')]
 
     if not tag_exists:
-        found[1] = [7, 'No fillers tags were found. Please refer to the project page to learn about the required use of filler tags.', '']
+        found['warning_message'] = 'No fillers tags were found. Please refer to the project \
+page to learn about the required use of filler tags.'
 
     return found
 
@@ -879,11 +882,18 @@ def command15(filepath):
 
 
     found = {}
-
+    tag_exists = False
+    in_section = False
     with io.open(filepath, 'r', encoding='utf') as f:
         ln = -1
         for line in f:
             ln = ln + 1
+
+            if u'<Section' in line:
+                in_section = True
+
+            if in_section and u'~' in line:
+                tag_exists = True
 
             no_white_space = re.findall(match_no_white_space, line)
             for match in no_white_space:
@@ -913,6 +923,11 @@ def command15(filepath):
             incorrect_tilde = re.match(match_tilde_at_start, line)
             if incorrect_tilde:
                 found[ln] = [15, 'Incorrect use of tilde', incorrect_tilde.group().encode('utf')]
+
+    if not tag_exists and not found:
+        found['warning_message'] = 'No tildes were found. Please refer to the project page \
+to learn about the proper use of the tilde for partially spoken words. \
+If there were no partially spoken words, feel free to ignore this error.'
 
     return found
 
