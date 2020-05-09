@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-__version__ = '1.29'
+__version__ = '1.30'
 import os
 import sys
 import re
@@ -1253,78 +1253,8 @@ def command23(filepath):
     return found
 
 
-# Code errors
-def command24(filepath):
-
-    inspect_sync_re = re.compile(ur'<(\s*)[Sync\w]+(?:\s*)[time\w]+(\s*)=(\s*)"(\s*)[\d\.]+(\s*)"/(\s*)>', re.UNICODE)
-    inspect_turn_re = re.compile(ur'<[Turn\w]+(?:\s*[speaker\w]+(\s*)=(\s*)"(\s*)[spk\w]+\d+(\s*)")?\s*[startTime\w]+(\s*)=(\s*)"(\s*)[\d\.]+(\s*)"\s*[endTime\w]+(\s*)=(\s*)"(\s*)[\d\.]+(\s*)"(?:\s*[speaker\w]+(\s*)=(\s*)"(\s*)[spk\w]+\d+(\s*)")?>', re.UNICODE)
-    closing_turn = re.compile(ur'\s*<\s*/\s*Turn\s*>', re.UNICODE)
-
-    found = {}
-    with io.open(filepath, 'r', encoding='utf') as f:
-
-        ln = 0
-        sync = False
-        empty_row = None
-        not_empty_row = False
-        for line in f:
-            ln += 1
-            line = line.rstrip("\r\n")
-
-            match = re.match(inspect_sync_re, line)
-            if match is not None:
-                if empty_row is not None and not_empty_row:
-                    found[empty_row] = [24, 'Empty row in Sync tag', '']
-                sync = True
-                empty_row = None
-                not_empty_row = False
-
-                if re.search(ur'\bSync\b\s*\btime\b', line, re.UNICODE) is None:
-                    found[ln] = [24, 'Tag syntax error', line.encode('utf')]
-                    continue
-
-                for group in match.groups():
-                    if group is not None and group != "":
-                        found[ln] = [24, 'Unexpected white space in Sync tag', line.encode('utf')]
-                        break
-
-                continue
-
-            if sync and line and re.search(closing_turn, line) is None:
-                not_empty_row = True
-            elif sync and not line:
-                empty_row = ln
-
-            if re.search(closing_turn, line):
-                if empty_row and not_empty_row:
-                    found[empty_row] = [24, 'Empty row in Sync tag', '']
-                sync = False
-                empty_row = None
-                not_empty_row = False
-
-            match = re.match(inspect_turn_re, line)
-            if match is not None:
-
-                if re.search(ur'\bTurn\b.*?\bstartTime\b.*?\bendTime\b.*?>', line, re.UNICODE) is None:
-                    found[ln] = [24, 'Tag syntax error', line.encode('utf')]
-                    continue
-
-                for group in match.groups():
-                    if group is not None and group != "":
-                        found[ln] = [24, 'Unexpected white space in Turn tag', line.encode('utf')]
-                        break
-
-                continue
-
-            if u'<Speaker' in line and line != '<Speakers>':
-                if re.match(ur'<Speaker.*?/>', line, re.UNICODE) is None:
-                    found[ln] = [24, 'Tag syntax error', line.encode('utf')]
-
-    return found
-
-
 # Sequential turns by same speaker
-def command25(filepath):
+def command24(filepath):
 
     speaker_re = re.compile(ur'spk\s*[0-9]+', re.UNICODE)
     start_time_re = re.compile(ur'startTime\s*=\s*"\s*(?P<value>[\d.]+?)\s*"', re.UNICODE)
@@ -1348,10 +1278,80 @@ def command25(filepath):
                     speaker = speaker.replace(' ', '')
                     if speaker == prev_spk:
                         report = '{} at {}'.format(speaker, start_value).encode('utf')
-                        found[ln] = [25, 'Sequential turns by the same speaker', report]
+                        found[ln] = [24, 'Sequential turns by the same speaker', report]
 
                 #save speaker
                 prev_spk = speaker
+
+    return found
+
+
+# Code errors
+def command25(filepath):
+
+    inspect_sync_re = re.compile(ur'<(\s*)[Sync\w]+(?:\s*)[time\w]+(\s*)=(\s*)"(\s*)[\d\.]+(\s*)"/(\s*)>', re.UNICODE)
+    inspect_turn_re = re.compile(ur'<[Turn\w]+(?:\s*[speaker\w]+(\s*)=(\s*)"(\s*)[spk\w]+\d+(\s*)")?\s*[startTime\w]+(\s*)=(\s*)"(\s*)[\d\.]+(\s*)"\s*[endTime\w]+(\s*)=(\s*)"(\s*)[\d\.]+(\s*)"(?:\s*[speaker\w]+(\s*)=(\s*)"(\s*)[spk\w]+\d+(\s*)")?>', re.UNICODE)
+    closing_turn = re.compile(ur'\s*<\s*/\s*Turn\s*>', re.UNICODE)
+
+    found = {}
+    with io.open(filepath, 'r', encoding='utf') as f:
+
+        ln = 0
+        sync = False
+        empty_row = None
+        not_empty_row = False
+        for line in f:
+            ln += 1
+            line = line.rstrip("\r\n")
+
+            match = re.match(inspect_sync_re, line)
+            if match is not None:
+                if empty_row is not None and not_empty_row:
+                    found[empty_row] = [25, 'Empty row in Sync tag', '']
+                sync = True
+                empty_row = None
+                not_empty_row = False
+
+                if re.search(ur'\bSync\b\s*\btime\b', line, re.UNICODE) is None:
+                    found[ln] = [25, 'Tag syntax error', line.encode('utf')]
+                    continue
+
+                for group in match.groups():
+                    if group is not None and group != "":
+                        found[ln] = [25, 'Unexpected white space in Sync tag', line.encode('utf')]
+                        break
+
+                continue
+
+            if sync and line and re.search(closing_turn, line) is None:
+                not_empty_row = True
+            elif sync and not line:
+                empty_row = ln
+
+            if re.search(closing_turn, line):
+                if empty_row and not_empty_row:
+                    found[empty_row] = [25, 'Empty row in Sync tag', '']
+                sync = False
+                empty_row = None
+                not_empty_row = False
+
+            match = re.match(inspect_turn_re, line)
+            if match is not None:
+
+                if re.search(ur'\bTurn\b.*?\bstartTime\b.*?\bendTime\b.*?>', line, re.UNICODE) is None:
+                    found[ln] = [25, 'Tag syntax error', line.encode('utf')]
+                    continue
+
+                for group in match.groups():
+                    if group is not None and group != "":
+                        found[ln] = [25, 'Unexpected white space in Turn tag', line.encode('utf')]
+                        break
+
+                continue
+
+            if u'<Speaker' in line and line != '<Speakers>':
+                if re.match(ur'<Speaker.*?/>', line, re.UNICODE) is None:
+                    found[ln] = [25, 'Tag syntax error', line.encode('utf')]
 
     return found
 
