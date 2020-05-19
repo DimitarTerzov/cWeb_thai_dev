@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="begar" audio_filename="BBC_DIRATV_swa_01" version="2" version_date="200518">
+<Speakers>
+<Speaker id="spk1" name="Anchor Kasim Kaira" check="no" type="male" dialect="native" accent="" scope="global"/>
+<Speaker id="spk2" name="Anchor Peter Musembi" check="no" type="male" dialect="native" accent="" scope="global"/>
+<Speaker id="spk3" name="Reporter Suluma Kasim" check="no" dialect="native" accent="" scope="global" type="female"/>
+<Speaker id="spk4" name="speaker#4" check="no" type="female" dialect="native" accent="" scope="global"/>
+<Speaker id="spk5" name="Translator" check="no" type="male" dialect="native" accent="" scope="global"/>
+</Speakers>
+<Episode>
+<Section type="report" startTime="0" endTime="600.000">
+<Turn startTime="0" endTime="34.375" speaker="spk1">
+<Sync time="0"/>
+Hii ni dira ya dunia kutoka idhaa ya Kiswahili ya &lt;initial&gt; BBC &lt;/initial&gt;. Tuliyo nayo usiku huu. 
+<Sync time="8.504"/>
+Hukumu ya kifo kwa wanaume wanne waliopatwa na hatia ya kumbaka na kisha kumwua mwanamke huko India. 
+<Sync time="16.719"/>
+Huko Somalia, serikali yajitetea kwa uamuzi wake wa kuhamisha raia kwa nguvu kutoka majengo ya serikali mjini Mogadishu. 
+<Sync time="26.407"/>
+Amri ya kutotoka usiku na hali ya hatari nchini Msiri inayoendelea kwa muda sasa, yatikisa uchumi wa nchi hiyo. 
+</Turn>
+<Turn speaker="spk2" startTime="34.375" endTime="66.317">
+<Sync time="34.375"/>
+Mimi ni Peter Musembi na kwenye michezo hapo baadaye, baada ya kushindwa kuvuma ligi ya mabingwa wa Afrika, 
+<Sync time="39.933"/>
+TP Mazembe yapania Kombe la Shirikisho Barani Afrika. 
+<Sync time="42.813"/>
+Mmliki wao Maurice Katumbi, asema hakuna njia nyingine ila kufuzu nusu Fainali mwishoni mwa wiki. 
+<Sync time="49.264"/>
+[music]
+<Sync time="59.309"/>
+[music] 
+</Turn>
+<Turn speaker="spk1" startTime="66.317" endTime="102.008">
+<Sync time="66.317"/>
+[breath] Naam, hujambo na karibu kwenye dira ya dunia, dakika thelathini za habari, uchambuzi, maoni yako na michezo.
+<Sync time="73.325"/>
+Mimi ni Kasim Kaira, nikiwa hapa London. 
+<Sync time="76.093"/>
+Tuanzie nchini India ambako watu wameshangilia na kupiga makofi nje ya mahakama leo hii, mjini Delhi, 
+<Sync time="82.12"/>
+baada ya jagi kuwahukumu adhabu ya kifo watu wanne waliombaka na kumwua mwanafunzi mmoja mwenye umri wa miaka ishirini na mitatu [breath]. 
+<Sync time="89.486"/>
+Baada ya kukataa maombi yao kukataa rufaa na kutaka wapewe kifungo cha maisha jela, 
+<Sync time="94.642"/>
+hakimu aliiambia mahakama kuwa kesi hiyo imeshtua sana imani ya jamii.
+<Sync time="99.374"/>
+Suluma Kasim anaarifu zaidi. 
+</Turn>
+<Turn speaker="spk3" startTime="102.008" endTime="164.06">
+<Sync time="102.008"/>
+[noise] Watu hawa walipelekwa mahakamani chini ya udhibiti mkubwa wa hali ya usalama. 
+<Sync time="107.454"/>
+Vyombo vya habari vilikuwa vikisubiri. [noise] 
+<Sync time="110.87"/>
+Mmoja wa washatakiwa hawa alipiga kelele Kaka zetu tuokoeni. 
+<Sync time="115.468"/>
+Leo hii polisi walikuwa wengi nje ya mahakama kabla ya hukumu kutolewa [breath] 
+<Sync time="119.865"/>
+ambayo nchi nzima ya India ilikuwa ikisubiri kwa hamu. 
+<Sync time="124.062"/>
+Dakika chache baadaye hakimu akatangaza hukumu yake.
+<Sync time="127.544"/>
+[noise] Adhabu ya kifo kwa wafungwa wote wanne, kwa uhalifu ulioumiza imani na dhamira ya jamii. 
+<Sync time="134.709"/>
+Femilia ya mwathiriwa ilikuwepo hapo na inasema haki imetendeka. 
+<Sync time="140.339"/>
+Ilikuwa kwenye basi hili ambapo mwanamke huyo alibakwa na watu hao wanne na kupigwa vibaya sana.
+<Sync time="147.013"/>
+Majeraha aliyoyapata yalikuwa mabaya sana hata imepelekea kufariki wiki mbili baadaye. 
+<Sync time="153.368"/>
+Kifo chake kimesababisha watu kubanisha hasira na huzuni zao hadharani. 
+<Sync time="159.038"/>
+Wahindi walitoka mababarani kwa wingi, wakidai haki itendeke. 
+</Turn>
+<Turn speaker="spk4" startTime="164.06" endTime="165.689">
+<Sync time="164.06"/>
+&lt;lang:Foreign&gt; We need a certainitive conviction &lt;/lang:Foreign&gt; 
+</Turn>
+<Turn speaker="spk5" startTime="165.689" endTime="174.998">
+<Sync time="165.689"/>
+Tunahitaji kuhakikishiwa watu kutiwa hatiani haraka. 
+<Sync time="168.703"/>
+&lt;lang:Foreign&gt; We need a certainitive conviction &lt;/lang:Foreign&gt; Hatuhitaji hukumu kali sana. [noise] 
+<Sync time="171.047"/>
+Tunachohitaji ni kukomeshwa kwa uhalifu wa aina hii. [noise] 
+</Turn>
+<Turn speaker="spk3" startTime="174.998" endTime="600.000">
+<Sync time="174.998"/>
+Nchini India, mwanamke hubakwa kila baada ya dakika ishirini. 
+<Sync time="179.485"/>
+Hivyo wengi wanaamini kuwa bado kuna mengi ya kufanywa ili jambo hili likomeshwe. 
+<Sync time="184.887"/>
+Washtakiwa wana haki ya kukataa rufaa, 
+<Sync time="187.408"/>
+hivyo itachukua muda kabla ya hukumu waliyopewa kutekelezwa. 
+<Sync time="191.405"/>
+Na India lazima iendelee kutafuta ufumbuzi juu ya jinsi kuweka hali ya usalama kwa wanawake nchini humo. 
+<Sync time="199.999"/>
+Suluma Kasim &lt;initial&gt; BBC &lt;/initial&gt;.
+</Turn>
+</Section>
+</Episode>
+</Trans>

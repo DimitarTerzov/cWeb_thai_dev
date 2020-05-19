@@ -26,20 +26,21 @@ def command7(filepath):
             elif '</Section' in line:
                 in_section = False
 
-            for match in re.finditer(filler_re, line):
-                tag_exists = True
+            if in_section:
 
-                target = match.group().strip()
-                # Pass filler tag with tilde.
-                # They are reported in command 15.
-                if "~" in target:
-                    continue
+                for match in re.finditer(filler_re, line):
+                    tag_exists = True
 
-                if (
-                    not re.match(ur'^{0}{1}?$'.format(skip_tags, punctuation), target, re.UNICODE)
-                    and in_section
-                ):
-                    found[ln] = [7, 'Invalid filler tag', target.encode('utf')]
+                    target = match.group().strip()
+                    # Pass filler tag with tilde.
+                    # They are reported in command 15.
+                    if "~" in target:
+                        continue
+
+                    if (
+                        not re.match(ur'^{0}{1}?$'.format(skip_tags, punctuation), target, re.UNICODE)
+                    ):
+                        found[ln] = [7, 'Invalid filler tag', target.encode('utf')]
 
     if not tag_exists:
         found['warning_message'] = 'No fillers tags were found. Please refer to the project \
@@ -49,7 +50,7 @@ page to learn about the required use of filler tags.'
 
 
 if __name__ == '__main__':
-    found = command7("../files/AsiaWaveNews_13.trs")
+    found = command7("../files/BBC_DIRATV_swa_01 (11).trs")
     keys = sorted(found.keys())
     for key in keys:
         print key, found[key], found[key][2]
