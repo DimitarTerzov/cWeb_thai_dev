@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-__version__ = '1.31'
+__version__ = '1.32'
 import os
 import sys
 import re
