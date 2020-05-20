@@ -9,7 +9,7 @@ from app.cWeb import WWpunctuatio, WWwhitespace
 #Sound tag validator
 def command3(filepath):
     skip_words = [
-        u'[no-speech]', u'[no—speech]', u'[noise]',
+        u'[no-speech]', u'[noise]',
         u'[overlap]', u'[music]', u'[applause]',
         u'[lipsmack]', u'[breath]', u'[cough]',
         u'[laugh]', u'[click]', u'[ring]',
