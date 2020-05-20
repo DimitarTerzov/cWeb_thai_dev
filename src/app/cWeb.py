@@ -17,7 +17,7 @@ DISABLE_COMMANDS = {
     10: False, 11: False, 12: False, 13: False, 14: False,
     15: False, 16: False, 17: False, 18: False, 19: False,
     20: False, 21: False, 22: False, 23: False, 24: False,
-    25: False
+    25: False, 26: False
 }
 LANGUAGE_CODES = {
     u'bul': u'Bulgarian',
@@ -194,7 +194,7 @@ def command2(filepath):
 #Sound tag validator
 def command3(filepath):
     skip_words = [
-        u'[no-speech]', u'[no—speech]', u'[noise]',
+        u'[no-speech]', u'[noise]',
         u'[overlap]', u'[music]', u'[applause]',
         u'[lipsmack]', u'[breath]', u'[cough]',
         u'[laugh]', u'[click]', u'[ring]',
@@ -1357,9 +1357,41 @@ def command25(filepath):
     return found
 
 
+# Omissions
+def command26(filepath):
+
+    found = {}
+    with io.open(filepath, 'r', encoding='utf') as f:
+
+        in_section = False
+        periods = 0
+        commas = 0
+        exclamations = 0
+        questions = 0
+        for line in f:
+            line = line.rstrip("\r\n")
+
+            if '<Section' in line:
+                in_section = True
+
+            if in_section and not line.startswith('<'):
+                periods += line.count('.')
+                commas += line.count(',')
+                exclamations += line.count('!')
+                questions += line.count('?')
+
+        if (periods < 20 or commas == 0 or
+            exclamations == 0 or questions == 0):
+            found['warning_message'] = 'Please check your file for proper punctuation. \
+You should use periods, question marks, exclamation points, \
+commas and hyphens for hyphenated words as normal.'
+
+    return found
+
+
 print "Content-type:text/html; charset=UTF-8\r\n\r\n"
 
-cmd_ids = range(26)
+cmd_ids = range(27)
 
 # Create instance of FieldStorage
 form = cgi.FieldStorage()
@@ -1441,7 +1473,7 @@ for f in json_files:
             if i == 0:
                 transcribers.add(rv.pop('transcriber_id', None))
 
-            if i in [3, 4, 7, 15]:
+            if i in [3, 4, 7, 15, 26]:
                 missing_tag_message = rv.pop('warning_message', None)
                 missing_tag_messages.append(missing_tag_message)
 
@@ -1476,10 +1508,11 @@ for f in json_files:
                         '<td>' + cgi.escape(res[2])         + '</td></tr>'
                 item_no = item_no + 1
 
-        for missing_tag_message in missing_tag_messages:
-            if missing_tag_message is not None:
-                file_div += '<tr><td>{0}</td><td colspan="6">{1}</td></tr>'.format(item_no, missing_tag_message)
-                item_no += 1
+        if 26 in cmd_ids:
+            for missing_tag_message in missing_tag_messages:
+                if missing_tag_message is not None:
+                    file_div += '<tr><td>{0}</td><td colspan="6">{1}</td></tr>'.format(item_no, missing_tag_message)
+                    item_no += 1
 
         file_div += '</table>'
     file_divs[f] = [file_div, total_errors]
